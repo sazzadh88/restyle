@@ -1,0 +1,10 @@
+{
+  "about": "harness/fixtures/late-load: load sequence 2.0-3.3 s after first contentful paint (panel 2000+700 ms, headline 2400+600 ms, text 2700+600 ms)",
+  "settleMs": 3300,
+  "settleTolMs": 350,
+  "windowMs": 5000,
+  "frames": 61,
+  "minLoadGroups": 2,
+  "hiddenAtMs": 1500,
+  "hiddenMinFgDiff": 0.2
+}

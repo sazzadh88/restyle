@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Motion fixture</title>
+<style>
+  /* Motion test page with known values (expected.json): a composite hero illustration of small CSS-keyframe
+     pieces (bob, drift, a keyframe step with holds, a drifting layer, a gradient layer), a slow auto-advancing announcement strip (3.5 s), a logo
+     marquee strip, a vertical headline ticker windowed by a mask, opacity-only reveals using a recipe that also transitions transform and filter, cards
+     with a hover lift, a cross-fading pair of stacked slides (2.5 s), a staged load with CSS delays and
+     fill-backwards from-states, and a page tint that starts when its band's top passes 60% of the viewport
+     and takes 300 ms. */
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: Arial, Helvetica, sans-serif; color: #1d2433; background-color: #ffffff; transition: background-color 300ms linear; }
+  body.tinted { background-color: #dceeff; }
+  .announce { height: 44px; background: #1d2433; color: #ffffff; overflow: hidden; }
+  .announce__track { display: flex; height: 100%; transition: transform 400ms ease; }
+  .announce__track p { flex: 0 0 100%; line-height: 44px; text-align: center; font-size: 14px; }
+  header.nav { height: 64px; display: flex; align-items: center; justify-content: space-between; padding: 0 64px; border-bottom: 1px solid #e3e7ef; }
+  header.nav a { color: #1d2433; text-decoration: none; margin-left: 24px; font-size: 15px; }
+  .hero { display: flex; align-items: center; justify-content: space-between; padding: 0 64px; height: 640px; }
+  .hero__copy { width: 560px; }
+  .hero h1 { font-size: 56px; line-height: 1.1; }
+  .hero h1 span { display: block; }
+  .hero p { font-size: 20px; line-height: 1.5; margin-top: 24px; color: #4a5468; }
+  /* staged load: from opacity 0, translateY(20px), blur(6px), held during the delay (fill both) */
+  @keyframes ld { from { opacity: 0; transform: translateY(20px); filter: blur(6px); } }
+  .ld { animation: ld 700ms ease-out both; }
+  .ld-1 { animation-delay: 300ms; } .ld-2 { animation-delay: 550ms; } .ld-3 { animation-delay: 900ms; }
+  /* composite illustration: five small pieces, no text */
+  .art { position: relative; width: 520px; height: 440px; background: #f3f6fb; border-radius: 24px; }
+  .art .pc { position: absolute; border-radius: 50%; }
+  .pc-1 { left: 60px; top: 70px; width: 90px; height: 90px; background: #ff9f43; animation: bob 2.6s ease-in-out infinite alternate; }
+  .pc-2 { left: 300px; top: 60px; width: 120px; height: 120px; background: #54a0ff; animation: bob 3.2s ease-in-out infinite alternate-reverse; }
+  .pc-3 { left: 170px; top: 250px; width: 70px; height: 70px; background: #10ac84; animation: bob 2.2s ease-in-out infinite alternate; }
+  .pc-4 { left: 60px; top: 330px; width: 140px; height: 60px; border-radius: 12px; background: #ee5253; animation: drift 4s linear infinite alternate; }
+  .pc-5 { left: 360px; top: 300px; width: 80px; height: 80px; border-radius: 12px; background: #5f27cd; animation: hop 3s ease infinite; }
+  @keyframes bob { from { transform: translateY(0); } to { transform: translateY(-16px); } }
+  @keyframes drift { from { transform: translateX(0); } to { transform: translateX(44px); } }
+  @keyframes hop { 0%, 70% { transform: translateX(0); } 85% { transform: translateX(36px); } 100% { transform: translateX(0); } }
+  /* stand-in internals: a layer whose transform drifts continuously (keyframes, not linked to scroll) and a
+     visible CSS gradient layer; both are the art box's media activity, never scroll-linked, parallax or a
+     palette gradient */
+  .pc-6 { left: 200px; top: 150px; width: 100px; height: 70px; border-radius: 16px; background: #feca57; animation: float 5s linear infinite alternate; }
+  .pc-7 { left: 430px; top: 200px; width: 70px; height: 80px; border-radius: 12px; background: linear-gradient(135deg, #ff6b6b, #48dbfb); }
+  @keyframes float { from { transform: translate(-30px, 0); } to { transform: translate(30px, -20px); } }
+  /* logo marquee: a strip twice as long as its window, moved by -50% */
+  .logos { overflow: hidden; padding: 40px 0; border-top: 1px solid #e3e7ef; border-bottom: 1px solid #e3e7ef; }
+  .logos__track { display: flex; width: max-content; animation: marquee 24s linear infinite; }
+  .logos__track span { font-size: 22px; font-weight: 700; color: #8a93a6; margin-right: 96px; }
+  @keyframes marquee { to { transform: translateX(-50%); } }
+  /* vertical headline ticker: windowed by a mask (no overflow clip), inside a page wrapper with overflow-x
+     hidden (which computes overflow-y auto but clips nothing vertically) */
+  .page { overflow-x: hidden; }
+  .ticker-band { padding: 48px 64px; }
+  .ticker { height: 216px; width: 520px; -webkit-mask-image: linear-gradient(transparent, #000 15%, #000 85%, transparent); mask-image: linear-gradient(transparent, #000 15%, #000 85%, transparent); -webkit-mask-repeat: no-repeat; mask-repeat: no-repeat; }
+  .ticker__track { animation: tick 12s linear infinite; }
+  .ticker__track p { height: 36px; line-height: 36px; font-size: 16px; color: #4a5468; }
+  @keyframes tick { from { transform: translateY(-25%); } to { transform: translateY(25%); } }
+  .band { padding: 120px 64px; }
+  .band h2 { font-size: 36px; margin-bottom: 32px; }
+  /* reveal recipe that always transitions transform and filter; the reveal only changes opacity */
+  .rv { opacity: 0; transition: opacity 600ms ease-out, transform 800ms ease-out, filter 800ms ease-out; }
+  .rv.in { opacity: 1; }
+  .copy p { font-size: 18px; line-height: 1.6; margin-bottom: 20px; max-width: 760px; }
+  .cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+  .card { height: 220px; border-radius: 16px; background: #f3f6fb; padding: 24px; font-size: 18px; }
+  .card:hover { transform: translateY(-4px); }
+  /* two stacked slides cross-fading every 2.5 s */
+  .fades { position: relative; height: 320px; }
+  .slide { position: absolute; inset: 0; border-radius: 20px; padding: 48px; font-size: 28px; opacity: 0; transition: opacity 600ms ease; }
+  .slide.on { opacity: 1; }
+  .slide-a { background: #ffe8d6; } .slide-b { background: #d6f5e8; }
+  .tintband { min-height: 1400px; padding: 120px 64px; }
+  .tintband p { font-size: 18px; line-height: 1.6; max-width: 760px; margin-bottom: 20px; }
+  footer { padding: 80px 64px; background: #1d2433; color: #ffffff; }
+  footer a { color: #ffffff; margin-right: 24px; }
+</style>
+</head>
+<body>
+<div class="page">
+  <div class="announce" aria-live="off">
+    <div class="announce__track" id="announce">
+      <p>Free returns on every order this month.</p>
+      <p>New shop hours: open late on Thursdays.</p>
+      <p>Gift wrapping is back for the season.</p>
+    </div>
+  </div>
+  <header class="nav">
+    <strong>Fixture Co.</strong>
+    <nav><a href="#a">Products</a><a href="#b">Stories</a><a href="#c">About</a><a href="#d">Contact</a></nav>
+  </header>
+  <section class="hero">
+    <div class="hero__copy">
+      <h1><span class="ld ld-1">A page that moves</span><span class="ld ld-2">in known ways</span></h1>
+      <p class="ld ld-3">Every animation on this page has a value written down in expected.json, so a capture can be checked against it.</p>
+    </div>
+    <div class="art" aria-hidden="true">
+      <div class="pc pc-1"></div><div class="pc pc-2"></div><div class="pc pc-3"></div><div class="pc pc-4"></div><div class="pc pc-5"></div>
+      <div class="pc pc-6"></div><div class="pc pc-7"></div>
+    </div>
+  </section>
+  <section class="logos">
+    <div class="logos__track"><span>NORTHWIND</span><span>LUMEN</span><span>ORBITAL</span><span>CASCADE</span><span>VERTEX</span><span>MERIDIAN</span><span>NORTHWIND</span><span>LUMEN</span><span>ORBITAL</span><span>CASCADE</span><span>VERTEX</span><span>MERIDIAN</span></div>
+  </section>
+  <section class="ticker-band">
+    <div class="ticker"><div class="ticker__track">
+      <p>Morning: the bakery opens at seven.</p><p>Noon: soup of the day is lentil.</p><p>Afternoon: new tea blends arrive.</p><p>Evening: the shop closes at eight.</p>
+      <p>Monday: market stall by the river.</p><p>Tuesday: bread class for beginners.</p><p>Friday: late opening until ten.</p><p>Sunday: closed for the day.</p>
+    </div></div>
+  </section>
+  <section class="band copy">
+    <h2>Reveals that only fade</h2>
+    <p class="rv">This paragraph fades in when it enters the viewport. Its transition list also names transform and filter, which never change on it.</p>
+    <p class="rv">A second paragraph with the same recipe, revealed by opacity alone, so its transform and filter transitions do nothing visible.</p>
+    <p class="rv">A third one, to make the count clear: three paragraphs, each with two transitions that are no-ops.</p>
+  </section>
+  <section class="band">
+    <h2>Cards that lift on hover</h2>
+    <div class="cards">
+      <div class="card rv">Card one lifts four pixels on hover.</div>
+      <div class="card rv">Card two lifts four pixels on hover.</div>
+      <div class="card rv">Card three lifts four pixels on hover.</div>
+    </div>
+  </section>
+  <section class="band">
+    <h2>Slides that cross-fade</h2>
+    <div class="fades" id="fades">
+      <div class="slide slide-a on">First slide: cross-fades every two and a half seconds.</div>
+      <div class="slide slide-b">Second slide: never a scroll reveal.</div>
+    </div>
+  </section>
+  <section class="tintband" id="tint">
+    <h2>The page tints here</h2>
+    <p>When the top of this band passes 60% of the viewport height, the page background turns light blue over 300 ms.</p>
+    <p>The band is tall so that several rests of the scroll pass see the tint.</p>
+    <p>It goes back to white when the band leaves the upper 60% of the viewport.</p>
+  </section>
+  <footer><a href="#a">Privacy</a><a href="#b">Terms</a><a href="#c">Careers</a><a href="#d">Press</a><a href="#e">Help</a></footer>
+</div>
+<script>
+  // announcement strip: advances every 3.5 s (first step 1 s after load)
+  (function () {
+    const t = document.getElementById('announce');
+    let i = 0;
+    const step = () => { i = (i + 1) % t.children.length; t.style.transform = 'translateX(' + (-100 * i) + '%)'; };
+    setTimeout(() => { step(); setInterval(step, 3500); }, 1000);
+  })();
+  // stacked slides: swap every 2.5 s
+  (function () {
+    const s = document.querySelectorAll('#fades .slide');
+    let i = 0;
+    setInterval(() => { s[i].classList.remove('on'); i = (i + 1) % s.length; s[i].classList.add('on'); }, 2500);
+  })();
+  // reveals
+  (function () {
+    const io = new IntersectionObserver((es) => es.forEach((e) => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }), { rootMargin: '0px 0px -15% 0px' });
+    document.querySelectorAll('.rv').forEach((el) => io.observe(el));
+  })();
+  // page tint while the band's top is above 60% of the viewport height
+  (function () {
+    const io = new IntersectionObserver((es) => es.forEach((e) => document.body.classList.toggle('tinted', e.isIntersecting)), { rootMargin: '0px 0px -40% 0px' });
+    io.observe(document.getElementById('tint'));
+  })();
+</script>
+</body>
+</html>

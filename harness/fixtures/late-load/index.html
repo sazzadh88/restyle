@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Late load fixture</title>
+<style>
+  /* A load sequence that starts 2 s after first paint and settles at ~3.3 s: the nav paints at once (first
+     contentful paint), a large hero panel slides in at 2.0 s (700 ms), its headline at 2.4 s and its text at
+     2.7 s (600 ms each). Values asserted by harness/check-capture.mjs --late (expected.json here). */
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #0b0c10; color: #f2f2f2; font-family: Arial, Helvetica, sans-serif; }
+  nav { height: 64px; display: flex; align-items: center; justify-content: space-between; padding: 0 48px; border-bottom: 1px solid #23252b; font-size: 15px; }
+  nav strong { font-size: 18px; }
+  .hero { padding: 72px 48px 0; }
+  .panel { height: 440px; border-radius: 16px; background: #e8a33d; display: flex; flex-direction: column; justify-content: center; padding: 0 64px;
+    opacity: 0; transform: translateY(16px); animation: rise 700ms cubic-bezier(.2, .7, .2, 1) 2000ms forwards; }
+  h1 { font-size: 64px; line-height: 1.1; margin: 0 0 16px; color: #111; opacity: 0; transform: translateY(16px); animation: rise 600ms ease-out 2400ms forwards; }
+  .panel p { font-size: 20px; line-height: 1.5; margin: 0; color: #222; max-width: 640px; opacity: 0; transform: translateY(16px); animation: rise 600ms ease-out 2700ms forwards; }
+  @keyframes rise { to { opacity: 1; transform: none; } }
+  section { min-height: 900px; padding: 96px 48px; background: #14161c; }
+  section h2 { font-size: 36px; margin: 0 0 12px; }
+  section p { font-size: 17px; line-height: 1.6; color: #b9bcc6; max-width: 720px; }
+</style>
+</head>
+<body>
+  <nav><strong>Latecomer</strong><span>Product &nbsp; Pricing &nbsp; Sign in</span></nav>
+  <div class="hero">
+    <div class="panel">
+      <h1>Arrives after two seconds</h1>
+      <p>The first screen of this page keeps building until about 3.3 seconds after its first paint.</p>
+    </div>
+  </div>
+  <section>
+    <h2>Below the fold</h2>
+    <p>Plain content further down the page, so the page scrolls and has more than one band.</p>
+  </section>
+</body>
+</html>

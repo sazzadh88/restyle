@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Colour roles fixture</title>
+<!--
+  Colour-role capture fixture (asserted by harness/check-capture.mjs --colours <dir>; values in expected.json).
+  A cream page (#f4efe6, painted by a wrapper over a #1f1f1f body) whose first screen is a photo band, with one
+  800 px dark band (#1f1f1f) and a 1600 px dark footer on the body colour: the dark colour has more CSS area
+  than the cream, but pageBg must be the cream (band area and first screens), theme light.
+  - white headline and copy over the hero photo (an <img>): never the text colour
+  - running text #2a2622 (headings and paragraphs), secondary text #8a8178 (captions, notes): text / mutedText
+  - a black (#111111) primary button with a white label (twice) and black inline text links: on this monochrome
+    page the accent is the primary button fill #111111; a white button on the dark band is not the primary
+  - chromatic art: an inline SVG illustration (#ff7a1a, #14b8a6) and an art box (#7c3aed), and a UI mock-up panel
+    holding a colour swatch grid (filled buttons without a visible label) and a filled "Apply" button (#e0457b)
+  - chromatic buttons that are not visible: display:none (#2f6bff), opacity 0 (#16a34a), and an inactive
+    carousel slide (aria-hidden, off-screen in an overflow-hidden track) with a #f59e0b button
+  - one tiny red "Sale" tag (#d11f1f): not a required minor colour
+  None of the chromatic colours may be the accent or accent2.
+-->
+<style>
+  * { box-sizing: border-box; }
+  html, body { margin: 0; background: #1f1f1f; color: #2a2622; font-family: Arial, Helvetica, sans-serif; }
+  .page { background: #f4efe6; }
+  .wrap { max-width: 1120px; margin: 0 auto; padding: 0 40px; }
+  header.top { height: 72px; display: flex; align-items: center; }
+  header.top .wrap { display: flex; justify-content: space-between; align-items: center; width: 100%; }
+  header.top nav a { color: #2a2622; text-decoration: none; margin-left: 28px; font-size: 15px; }
+  .mark { font-weight: 700; font-size: 20px; color: #2a2622; text-decoration: none; }
+  .hero { position: relative; height: 720px; overflow: hidden; }
+  .hero img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+  .hero .copy { position: relative; padding-top: 360px; color: #ffffff; }
+  .hero h1 { font-size: 64px; line-height: 1.05; margin: 0 0 16px; font-weight: 700; max-width: 760px; }
+  .hero p { font-size: 22px; line-height: 1.4; margin: 0; max-width: 620px; }
+  section.band { padding: 96px 0; }
+  h2 { font-size: 40px; line-height: 1.15; margin: 0 0 20px; color: #2a2622; }
+  h3 { font-size: 22px; margin: 0 0 10px; color: #2a2622; }
+  p { font-size: 18px; line-height: 1.6; margin: 0 0 16px; }
+  .muted { color: #8a8178; font-size: 16px; line-height: 1.6; }
+  a.inline { color: #111111; text-decoration: underline; }
+  .btn { display: inline-block; padding: 14px 28px; border-radius: 6px; font-size: 16px; font-weight: 700; text-decoration: none; margin: 8px 12px 0 0; }
+  .btn-dark { background: #111111; color: #ffffff; }
+  .btn-light { background: #ffffff; color: #111111; }
+  .cols { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 32px; margin-top: 32px; }
+  .dark { background: #1f1f1f; color: #ffffff; min-height: 800px; }
+  .dark h2, .dark p { color: #ffffff; }
+  .split { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: start; }
+  .panel { background: #ffffff; border: 1px solid #ddd5c8; border-radius: 12px; box-shadow: 0 12px 32px rgba(0, 0, 0, 0.08); padding: 20px; }
+  .panel .bar { font-size: 12px; color: #8a8178; margin: 0 0 12px; }
+  .swatches { display: grid; grid-template-columns: repeat(6, 1fr); gap: 8px; }
+  .swatches button { height: 44px; border: 0; border-radius: 6px; cursor: pointer; }
+  .panel .labels { display: flex; justify-content: space-between; font-size: 12px; color: #8a8178; margin: 10px 0; }
+  .panel .apply { background: #e0457b; color: #ffffff; border: 0; border-radius: 6px; padding: 10px 18px; font-size: 13px; font-weight: 700; }
+  .sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+  .art { width: 220px; height: 160px; background: #7c3aed; border-radius: 16px; margin-top: 24px; }
+  .slider { overflow: hidden; margin-top: 24px; }
+  .track { display: flex; width: 100%; }
+  .slide { flex: 0 0 100%; padding: 32px; background: #ebe4d8; border-radius: 12px; }
+  .slide + .slide { margin-left: 0; }
+  .sale { display: inline-block; background: #d11f1f; color: #ffffff; font-size: 11px; font-weight: 700; padding: 2px 6px; border-radius: 3px; margin-left: 8px; vertical-align: middle; }
+  footer { color: #d9d4cc; padding: 96px 0 120px; min-height: 1600px; }
+  footer h4 { color: #ffffff; font-size: 16px; margin: 0 0 14px; }
+  footer a { display: block; color: #d9d4cc; text-decoration: none; font-size: 15px; margin: 0 0 10px; }
+  footer .fcols { display: grid; grid-template-columns: repeat(4, 1fr); gap: 32px; }
+</style>
+</head>
+<body>
+<div class="page">
+<header class="top"><div class="wrap">
+  <a class="mark" href="/">Fieldnote</a>
+  <nav><a href="#a">Guides</a><a href="#b">Tools</a><a href="#c">Journal</a></nav>
+</div></header>
+
+<section class="hero">
+  <img alt="" src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1440' height='720' viewBox='0 0 1440 720'%3E%3Crect width='1440' height='720' fill='%23453a30'/%3E%3Ccircle cx='300' cy='260' r='260' fill='%236b5643'/%3E%3Ccircle cx='980' cy='180' r='320' fill='%23584634'/%3E%3Crect x='0' y='470' width='1440' height='250' fill='%232f2620'/%3E%3Ccircle cx='1220' cy='560' r='200' fill='%237a6450'/%3E%3C/svg%3E">
+  <div class="wrap copy">
+    <h1>Walk slower, notice more</h1>
+    <p>Field guides for unhurried weekends outside, written by people who stop to look.</p>
+  </div>
+</section>
+
+<section class="band" id="a"><div class="wrap">
+  <h2>Plan a quiet route</h2>
+  <p>Every guide starts with a short route and a few places to sit. Read the <a class="inline" href="#b">route notes</a> before you go, then pack light and leave early so the paths are still empty when you arrive.</p>
+  <p>We test each walk in two seasons and mark the places where the view changes most. The <a class="inline" href="#c">season table</a> lists what to expect in each month.</p>
+  <a class="btn btn-dark" href="#b">Start a route</a>
+  <a class="btn-hidden btn" href="#b" style="display:none;background:#2f6bff;color:#ffffff">Hidden offer</a>
+  <a class="btn" href="#b" style="opacity:0;background:#16a34a;color:#ffffff">Faded offer</a>
+  <div class="cols">
+    <div><h3>Short loops</h3><p>Two hours or less, with a bench every mile and water at the start.</p><p class="muted">Updated each spring after the paths are walked again by two readers.</p></div>
+    <div><h3>Long days</h3><p>Full-day routes with a lunch stop, a shortcut home and the last bus time.</p><p class="muted">Times assume an easy pace and one long stop for food and rest.</p></div>
+    <div><h3>Rainy weeks</h3><p>Covered walks, museums on the way and paths that drain quickly.</p><p class="muted">Check the weather notes on the morning you leave; some paths close.</p></div>
+  </div>
+</div></section>
+
+<section class="band" id="b"><div class="wrap split">
+  <div>
+    <h2>Tools that stay out of the way</h2>
+    <p>Choose a colour for each of your saved routes so they stand apart on the map. The palette below is a preview of the route editor.</p>
+    <p class="muted">The editor keeps your routes on this device. Nothing is shared until you choose to export a route as a file.</p>
+    <svg width="320" height="200" viewBox="0 0 320 200" aria-hidden="true"><rect width="320" height="200" rx="16" fill="#efe7da"/><circle cx="90" cy="110" r="60" fill="#ff7a1a"/><path d="M150 170 L230 40 L300 170 Z" fill="#14b8a6"/><circle cx="250" cy="70" r="18" fill="#ff7a1a"/></svg>
+    <div class="art"></div>
+  </div>
+  <div class="panel">
+    <p class="bar">Route editor / colours</p>
+    <div class="swatches">
+      <button style="background:#ef4444"><span class="sr">red</span></button><button style="background:#f97316"><span class="sr">orange</span></button><button style="background:#eab308"><span class="sr">yellow</span></button><button style="background:#22c55e"><span class="sr">green</span></button><button style="background:#06b6d4"><span class="sr">cyan</span></button><button style="background:#3b82f6"><span class="sr">blue</span></button>
+      <button style="background:#6366f1"><span class="sr">indigo</span></button><button style="background:#a855f7"><span class="sr">purple</span></button><button style="background:#ec4899"><span class="sr">pink</span></button><button style="background:#f43f5e"><span class="sr">rose</span></button><button style="background:#84cc16"><span class="sr">lime</span></button><button style="background:#14b8a6"><span class="sr">teal</span></button>
+    </div>
+    <div class="labels"><span>Warm</span><span>Cool</span><span>Bright</span><span>Soft</span></div>
+    <div class="labels"><span>Route 1</span><span>Route 2</span><span>Route 3</span><span>Route 4</span></div>
+    <button class="apply" type="button">Apply</button>
+  </div>
+</div></section>
+
+<section class="band dark"><div class="wrap">
+  <h2>Walk with a group</h2>
+  <p>Monthly walks led by a local reader, with a slow pace and a long lunch. Groups are small and the routes change every month.</p>
+  <a class="btn btn-light" href="#c">See the dates</a>
+</div></section>
+
+<section class="band" id="c"><div class="wrap">
+  <h2>From the journal</h2>
+  <p>Notes from the last season: the best benches, a closed bridge and a new path along the river.</p>
+  <div class="slider"><div class="track">
+    <div class="slide"><h3>The river path is open</h3><p>A new path follows the river for three miles. Read the <a class="inline" href="#c">full note</a> for the access points.</p></div>
+    <div class="slide" aria-hidden="true"><h3>Autumn guide</h3><p>The new guide is out next month.</p><a class="btn" href="#c" style="background:#f59e0b;color:#111111">Pre-order now</a></div>
+  </div></div>
+  <p style="margin-top:24px">Pocket map, folded <span class="sale">Sale</span></p>
+  <p class="muted">Prices include delivery to most places. Returns are free for thirty days after the parcel arrives.</p>
+  <a class="btn btn-dark" href="#a">Read the journal</a>
+</div></section>
+</div>
+
+<footer><div class="wrap fcols">
+  <div><h4>Guides</h4><a href="#">Short loops</a><a href="#">Long days</a><a href="#">Rainy weeks</a></div>
+  <div><h4>Tools</h4><a href="#">Route editor</a><a href="#">Season table</a><a href="#">Maps</a></div>
+  <div><h4>Journal</h4><a href="#">Latest</a><a href="#">Archive</a><a href="#">Letters</a></div>
+  <div><h4>About</h4><a href="#">Writers</a><a href="#">Contact</a><a href="#">Privacy</a></div>
+</div></footer>
+</body>
+</html>

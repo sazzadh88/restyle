@@ -1,0 +1,21 @@
+{
+  "about": "Known motion values of harness/fixtures/motion/index.html, captured at 1440 only (harness/check-motion.mjs).",
+  "art": { "kind": "art", "activity": ["low", "medium", "high"], "minPieces": 3, "pieceClass": "pc-" },
+  "standIn": { "drift": "pc-6", "gradient": "pc-7", "gradientStop": "255, 107, 107" },
+  "marquees": [
+    { "el": "logos__track", "dir": "left", "pxPerSec": 50, "tolPct": 15 },
+    { "el": "ticker__track", "dir": "down", "pxPerSec": 12, "tolPct": 20 }
+  ],
+  "autoAdvance": [
+    { "el": "announce", "periodMs": 3500, "tolMs": 250, "how": "slide" },
+    { "el": "fades", "periodMs": 2500, "tolMs": 250, "how": "fade" }
+  ],
+  "reveals": { "elements": 6, "notIn": "slide" },
+  "transitions": {
+    "transform|800": { "n": 6, "noop": 3 },
+    "filter|800": { "n": 6, "noop": 6 },
+    "opacity|600": { "rvMin": 6 }
+  },
+  "load": { "order": ["headline", "text"], "t0How": "animation start", "startDiffMs": 600, "tolMs": 40 },
+  "tint": { "color": "#dceeff", "maxDistance": 0.02, "bandTop": 0.6, "bandTopTol": 0.08, "ms": 300, "msMin": 250, "msMax": 650 }
+}

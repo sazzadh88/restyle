@@ -1,0 +1,9 @@
+node_modules/
+runs/**
+!runs/*/
+!runs/.gitkeep
+!runs/*/REPORT.md
+!runs/*/CHANGES.md
+*.log
+.DS_Store
+Thumbs.db

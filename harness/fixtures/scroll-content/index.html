@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Scroll content fixture</title>
+<!--
+  Capture test page (harness/check-capture.mjs --scroll): content a full-page screenshot misses unless the capture
+  renders each band as it looks in view.
+  - #region-bar: an in-flow region/language bar inserted 500 ms after load at the top of the page (pushes the
+    page down 64 px); the capture must remove it before measuring.
+  - <main>: a 64 px strip laid over the top of a width-constrained wrapper (they overlap, so they group as one)
+    holding four stacked bands: the segmentation must descend into the wrapper.
+  - .cv bands and the footer: content-visibility:auto (off-screen subtrees are not painted by a full-page shot).
+  - .rv text: CSS scroll-driven reveal (animation-timeline: view()), hidden in its scroll-0 state.
+  - #panel: a panel whose art is mounted only while it is in view (IntersectionObserver), with a small play button.
+-->
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; font: 18px/1.5 Arial, Helvetica, sans-serif; color: #1a1a1a; background: #ffffff; }
+  #region-bar { display: flex; align-items: center; justify-content: center; gap: 16px; height: 64px; background: #ececef; font-size: 13px; }
+  #region-bar select { height: 32px; }
+  #region-bar .go { height: 32px; padding: 0 14px; border: 0; border-radius: 8px; background: #111; color: #fff; }
+  #region-bar .x { width: 28px; height: 28px; border: 0; background: none; font-size: 20px; }
+  header { position: sticky; top: 0; z-index: 5; height: 64px; display: flex; align-items: center; gap: 28px; padding: 0 40px; background: #ffffff; border-bottom: 1px solid #e5e5e5; }
+  header a { color: #1a1a1a; text-decoration: none; font-size: 14px; }
+  .hero { height: 836px; display: flex; flex-direction: column; justify-content: center; padding: 0 40px; background: #f4f1ea; }
+  .hero h1 { font-size: 64px; line-height: 1.05; margin: 0 0 16px; }
+  .strip { position: relative; height: 64px; margin-bottom: -64px; z-index: 1; display: flex; align-items: center; padding: 0 40px; font-size: 13px; color: #777; }
+  .wrap { max-width: 1392px; margin: 0 auto; padding: 0 24px; }
+  .band { padding: 120px 0; }
+  .band h2 { font-size: 44px; line-height: 1.1; margin: 0 0 20px; }
+  .band p { max-width: 640px; margin: 0 0 14px; }
+  .cv { content-visibility: auto; contain-intrinsic-size: auto 760px; }
+  .tile { height: 240px; margin-top: 32px; border-radius: 12px; background: #2f5bd8; }
+  .rv { animation: rv linear both; animation-timeline: view(); animation-range: entry 0% cover 35%; }
+  @keyframes rv { from { opacity: 0; transform: translateY(48px); } to { opacity: 1; transform: none; } }
+  #panel { position: relative; height: 480px; margin-top: 32px; border-radius: 12px; overflow: hidden; }
+  #panel .art { position: absolute; inset: 0; background: linear-gradient(135deg, #ff7a59, #ffd166 45%, #06d6a0); }
+  #panel .art span { position: absolute; left: 40px; bottom: 40px; font-size: 40px; font-weight: 700; color: #102a43; }
+  #panel .play { position: absolute; right: 16px; bottom: 16px; width: 36px; height: 36px; border-radius: 50%; border: 0; background: #222; }
+  footer { content-visibility: auto; contain-intrinsic-size: auto 400px; padding: 80px 40px; background: #111418; color: #e8e8e8; display: grid; grid-template-columns: repeat(4, 1fr); gap: 32px; }
+  footer h4 { margin: 0 0 12px; font-size: 14px; }
+  footer a { display: block; color: #b8b8b8; font-size: 14px; line-height: 2; text-decoration: none; }
+  @media (max-width: 700px) { .hero h1 { font-size: 40px; } .band h2 { font-size: 30px; } footer { grid-template-columns: 1fr 1fr; } }
+</style>
+</head>
+<body>
+<header><strong>Fieldnote</strong><a href="#a">Product</a><a href="#b">Stories</a><a href="#c">Pricing</a></header>
+<main>
+  <section class="hero"><h1>Notes that follow the work</h1><p>A plain first screen that is painted at once.</p></section>
+  <div class="strip">Trusted by small teams everywhere</div>
+  <div class="wrap">
+    <section class="band cv" id="a">
+      <h2>Rendered only near the viewport</h2>
+      <p>This band uses content-visibility auto, so a full-page shot skips painting it while it is off screen.</p>
+      <p>A user who scrolls here sees it at once; the capture must show it the same way.</p>
+      <div class="tile"></div>
+    </section>
+    <section class="band" id="b" style="min-height: 600px">
+      <h2 class="rv">Revealed by the scroll position</h2>
+      <p class="rv">These lines fade up as they enter the viewport, driven by a view timeline.</p>
+      <p class="rv">In their scroll-0 state they are invisible, which is not how anyone sees them.</p>
+    </section>
+    <section class="band" id="c">
+      <h2>Art mounted while in view</h2>
+      <p>The panel below draws its art only while it is on screen and clears it again when it leaves.</p>
+      <div id="panel"><button class="play" aria-label="Play"></button></div>
+    </section>
+    <section class="band cv" id="d">
+      <h2>One more band far down the page</h2>
+      <p>Also content-visibility auto, with a different intrinsic size than its rendered size.</p>
+      <p>Its rows must be painted in the full shot and it must be its own band.</p>
+      <div class="tile" style="background:#1f9d6b"></div>
+    </section>
+  </div>
+</main>
+<footer>
+  <div><h4>Product</h4><a href="#">Notes</a><a href="#">Boards</a><a href="#">Search</a></div>
+  <div><h4>Company</h4><a href="#">About</a><a href="#">Careers</a><a href="#">Press</a></div>
+  <div><h4>Help</h4><a href="#">Guides</a><a href="#">Status</a><a href="#">Contact</a></div>
+  <div><h4>Legal</h4><a href="#">Terms</a><a href="#">Privacy</a><a href="#">Cookies</a></div>
+</footer>
+<script>
+  // region bar: inserted after load, pushes the page down
+  setTimeout(() => {
+    const bar = document.createElement('div');
+    bar.id = 'region-bar';
+    bar.setAttribute('aria-label', 'Choose country or region');
+    bar.innerHTML = '<span>Choose another country or region to see content specific to your location.</span><select><option>Elsewhere</option></select><button class="go" onclick="location.hash=\'switched\'">Continue</button><button class="x" aria-label="Close" onclick="this.parentNode.remove()">&times;</button>';
+    document.body.insertBefore(bar, document.body.firstChild);
+  }, 500);
+  // panel art mounted only while in view
+  const panel = document.getElementById('panel');
+  new IntersectionObserver((es) => {
+    for (const e of es) {
+      const art = panel.querySelector('.art');
+      if (e.isIntersecting && !art) { const d = document.createElement('div'); d.className = 'art'; d.innerHTML = '<span>Live preview</span>'; panel.insertBefore(d, panel.firstChild); }
+      else if (!e.isIntersecting && art) art.remove();
+    }
+  }, { threshold: 0.05 }).observe(panel);
+</script>
+</body>
+</html>

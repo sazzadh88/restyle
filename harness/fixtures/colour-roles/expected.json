@@ -1,0 +1,10 @@
+{
+  "pageBg": "#f4efe6",
+  "theme": "light",
+  "text": "#2a2622",
+  "mutedText": "#8a8178",
+  "accent": "#111111",
+  "notAccent": ["#ffffff", "#ff7a1a", "#14b8a6", "#7c3aed", "#e0457b", "#2f6bff", "#16a34a", "#f59e0b", "#d11f1f", "#ef4444", "#3b82f6", "#ec4899", "#14b8a6", "#22c55e"],
+  "sale": "#d11f1f",
+  "maxDistance": 0.03
+}

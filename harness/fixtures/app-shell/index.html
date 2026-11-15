@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>App shell fixture</title>
+<!--
+  Capture test page (harness/check-capture.mjs --app <dir>): an app-shell layout. The document is one viewport
+  tall (html/body height 100%, overflow hidden); a 100vh grid holds a top bar, a sidebar (its own short scroller,
+  hidden below 700 px) and a <main> inner scroller (overflow-y auto) with six bands:
+  - b1 hero: h1 48 px (36 px below 700 px), a paragraph and a button;
+  - b2 cards (content-visibility:auto): h2 32 px and three cards with h3 titles 20 px;
+  - b3 a section with a <footer> row of its own (a section footer, not the page footer): never role footer;
+  - b4 a row of six text logos at 22 px (never a heading tier) and six boxed one-character keycap labels at
+    28 px (never a heading tier);
+  - b5 cards (content-visibility:auto): h2 and three cards with h3 titles;
+  - the page <footer> last (content-visibility:auto): role footer.
+  Known values: the inner scroller is unrolled into the document (meta.innerScroller[vp].ok); >= 6 bands below
+  the nav at 1440 and at 390; h1 48 / h2 32 / h3 20 px at 1440 (not the 28 px keycaps or the 22 px logos); the
+  full shot is painted below the first screen.
+-->
+<style>
+  * { box-sizing: border-box; }
+  html, body { height: 100%; margin: 0; overflow: hidden; }
+  body { font: 16px/1.5 Arial, Helvetica, sans-serif; color: #1c1d21; background: #f4f5f7; }
+  .app { display: grid; grid-template-columns: 240px minmax(0, 1fr); grid-template-rows: 64px minmax(0, 1fr); height: 100vh; }
+  .top { grid-column: 1 / -1; display: flex; align-items: center; gap: 28px; padding: 0 24px; background: #ffffff; border-bottom: 1px solid #e3e5ea; }
+  .top .home { font-size: 22px; font-weight: 700; color: #1c1d21; text-decoration: none; }
+  .top nav a { color: #444444; text-decoration: none; font-size: 14px; margin-right: 18px; }
+  aside { overflow-y: auto; padding: 16px; background: #eceef2; }
+  aside a { display: block; padding: 8px 10px; color: #333333; text-decoration: none; font-size: 14px; }
+  main { overflow-y: auto; position: relative; }
+  .band { padding: 96px 56px; }
+  .band h2 { font-size: 32px; line-height: 1.2; margin: 0 0 16px; }
+  .band p { max-width: 640px; margin: 0 0 12px; }
+  .hero { background: #ffffff; padding-top: 120px; padding-bottom: 120px; }
+  .hero h1 { font-size: 48px; line-height: 1.1; margin: 0 0 20px; }
+  .btn { display: inline-block; padding: 12px 22px; border-radius: 8px; background: #2747d8; color: #ffffff; text-decoration: none; }
+  .cv { content-visibility: auto; contain-intrinsic-size: auto 500px; }
+  .cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 32px; }
+  .card { background: #ffffff; border: 1px solid #e3e5ea; border-radius: 12px; padding: 24px; }
+  .card h3 { font-size: 20px; margin: 0 0 8px; }
+  .card .ph { height: 140px; border-radius: 8px; background: #c9d3f5; margin-bottom: 16px; }
+  .alt { background: #e9edf8; }
+  .section-foot { display: flex; gap: 16px; margin-top: 24px; padding-top: 16px; border-top: 1px solid #c6cbd6; font-size: 14px; }
+  .section-foot a { color: #2747d8; }
+  .marks { display: flex; flex-wrap: wrap; gap: 24px 40px; align-items: center; margin: 32px 0 56px; }
+  .marks span { font-size: 22px; font-weight: 700; color: #5b5f6b; }
+  .keys { display: flex; flex-wrap: wrap; gap: 12px; }
+  .keys .key { display: inline-flex; align-items: center; justify-content: center; width: 64px; height: 64px; border-radius: 10px; background: #ffffff; border: 1px solid #c6cbd6; box-shadow: 0 2px 0 #c6cbd6; font-size: 28px; font-weight: 600; }
+  footer.page { padding: 64px 56px; background: #1c1d21; color: #d8dae0; display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; }
+  footer.page h4 { margin: 0 0 10px; font-size: 14px; color: #ffffff; }
+  footer.page a { display: block; color: #aeb2bd; text-decoration: none; font-size: 14px; line-height: 2; }
+  @media (max-width: 700px) {
+    .app { grid-template-columns: minmax(0, 1fr); }
+    aside { display: none; }
+    .band { padding: 64px 20px; }
+    .hero h1 { font-size: 36px; }
+    .band h2 { font-size: 26px; }
+    .cards { grid-template-columns: 1fr; }
+    .keys .key { font-size: 18px; width: 44px; height: 44px; }
+    footer.page { grid-template-columns: 1fr 1fr; padding: 48px 20px; }
+  }
+</style>
+</head>
+<body>
+<div class="app">
+  <header class="top">
+    <a class="home" href="/">Tidewater</a>
+    <nav><a href="#b2">Plans</a><a href="#b3">Guides</a><a href="#b5">Library</a></nav>
+  </header>
+  <aside aria-label="Library">
+    <a href="#b1">Overview</a><a href="#b2">Plans</a><a href="#b3">Guides</a><a href="#b4">Partners</a><a href="#b5">Library</a>
+    <a href="#b1">Saved</a><a href="#b2">Recent</a><a href="#b3">Shared</a>
+  </aside>
+  <main>
+    <section class="band hero" id="b1">
+      <h1>Plan the season from one quiet screen</h1>
+      <p>Everything you track sits in one long page that scrolls inside the app window, never the browser window.</p>
+      <p>A capture has to read every band of it, the same way it reads an ordinary page.</p>
+      <a class="btn" href="#b2">Start planning</a>
+    </section>
+    <section class="band alt cv" id="b2">
+      <h2>Rendered only near the viewport</h2>
+      <p>This band uses content-visibility auto inside the inner scroller.</p>
+      <div class="cards">
+        <div class="card"><div class="ph"></div><h3>Weekly rhythm</h3><p>Set the days that repeat and let the rest fill in.</p></div>
+        <div class="card"><div class="ph"></div><h3>Shared lists</h3><p>Hand a list to someone else and see it change.</p></div>
+        <div class="card"><div class="ph"></div><h3>Quiet alerts</h3><p>Only the reminders that matter, at the time they matter.</p></div>
+      </div>
+    </section>
+    <section class="band" id="b3">
+      <h2>Guides that end with a footer row</h2>
+      <p>This band closes with a footer element of its own: a section footer, not the footer of the page.</p>
+      <p>Its role must come from its content, never from that element.</p>
+      <footer class="section-foot"><a href="#b3">All guides</a><a href="#b3">Print this guide</a><span>Updated weekly</span></footer>
+    </section>
+    <section class="band alt" id="b4">
+      <h2>Used by teams in every field</h2>
+      <div class="marks"><span>Northwind</span><span>Lumen Labs</span><span>Harbor &amp; Co</span><span>Fieldstone</span><span>Quillmark</span><span>Bright Ridge</span></div>
+      <p>Keyboard first: every view has a shortcut.</p>
+      <div class="keys"><span class="key">A</span><span class="key">S</span><span class="key">D</span><span class="key">F</span><span class="key">J</span><span class="key">K</span></div>
+    </section>
+    <section class="band cv" id="b5">
+      <h2>The library keeps what you finish</h2>
+      <p>Also content-visibility auto, far down the inner scroller.</p>
+      <div class="cards">
+        <div class="card"><div class="ph"></div><h3>Archive</h3><p>Finished plans stay searchable for good.</p></div>
+        <div class="card"><div class="ph"></div><h3>Templates</h3><p>Turn any plan into a starting point.</p></div>
+        <div class="card"><div class="ph"></div><h3>Exports</h3><p>Take your plans with you in plain files.</p></div>
+      </div>
+    </section>
+    <footer class="page cv">
+      <div><h4>Product</h4><a href="#b1">Overview</a><a href="#b2">Plans</a><a href="#b5">Library</a></div>
+      <div><h4>Company</h4><a href="#b1">About</a><a href="#b1">Careers</a><a href="#b1">Press</a></div>
+      <div><h4>Help</h4><a href="#b3">Guides</a><a href="#b3">Status</a><a href="#b3">Contact</a></div>
+      <div><h4>Legal</h4><a href="#b1">Terms</a><a href="#b1">Privacy</a><a href="#b1">Cookies</a></div>
+    </footer>
+  </main>
+</div>
+</body>
+</html>

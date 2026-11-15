@@ -1,0 +1,19 @@
+{
+  "name": "restyle",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "capture": "node skill/restyle/scripts/capture.mjs",
+    "serve": "node skill/restyle/scripts/serve.mjs",
+    "compare": "node skill/restyle/scripts/compare.mjs",
+    "score": "node harness/score.mjs",
+    "report": "node harness/report.mjs"
+  },
+  "dependencies": {
+    "culori": "^4.0.2",
+    "pixelmatch": "^8.0.0",
+    "playwright-core": "^1.65.1",
+    "pngjs": "^7.0.0"
+  }
+}

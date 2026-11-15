@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Viewport retry fixture</title>
+<!--
+  Capture test page for the per-viewport retry (harness/check-capture.mjs --retry):
+  at a viewport narrower than 500 px the page removes its <body> 300 ms after load on the first visit of the
+  browser context (localStorage flag), so every page-side measure of that viewport throws; a fresh page of the
+  same context (the retry) is a normal page. With ?always it removes the body on every visit: the capture must
+  then exit non-zero with "viewport 390 failed twice" (or the analysis failing twice when 390 is the only width).
+-->
+<style>
+  body { margin: 0; font: 18px/1.5 system-ui, sans-serif; color: #1d1d1f; background: #fafaf7; }
+  header { height: 64px; display: flex; align-items: center; padding: 0 32px; background: #fff; border-bottom: 1px solid #e5e5e0; }
+  section { padding: 96px 32px; }
+  section:nth-of-type(2) { background: #20302a; color: #f4f1e8; }
+  h1 { font-size: 56px; margin: 0 0 16px; } h2 { font-size: 36px; margin: 0 0 12px; }
+  .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+  .card { background: #fff; border-radius: 12px; padding: 24px; color: #1d1d1f; }
+  @media (max-width: 600px) { .grid { grid-template-columns: 1fr; } h1 { font-size: 36px; } }
+  footer { padding: 48px 32px; background: #111; color: #ccc; }
+</style>
+</head>
+<body>
+<header><strong>Fixture</strong></header>
+<section><h1>A plain page that breaks once</h1><p>Its narrow view removes the document body on the first visit, so the capture has to retry that viewport on a fresh page.</p></section>
+<section><h2>Three cards</h2><div class="grid"><div class="card">One card with some words in it.</div><div class="card">Another card with words.</div><div class="card">A third card with words.</div></div></section>
+<section><h2>Closing band</h2><p>Some closing words to give the band a paragraph.</p></section>
+<footer>Footer text for the fixture page.</footer>
+<script>
+  (() => {
+    const always = /[?&]always\b/.test(location.search);
+    let first = true;
+    try { first = !localStorage.getItem('rc-retry-broken'); } catch (e) { /* storage blocked: break every time */ }
+    if (innerWidth < 500 && (always || first)) {
+      try { localStorage.setItem('rc-retry-broken', '1'); } catch (e) { /* ignore */ }
+      addEventListener('load', () => setTimeout(() => { if (document.body) document.documentElement.removeChild(document.body); }, 300));
+    }
+  })();
+</script>
+</body>
+</html>

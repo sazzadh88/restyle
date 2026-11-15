@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Clip edge fixture</title>
+<style>
+  /* the page never scrolls sideways: body clips horizontally, so a too-wide footer grid is cut, not scrollable */
+  html, body { margin: 0; }
+  body { overflow-x: hidden; font: 16px/1.5 system-ui, sans-serif; color: #1b1b1b; background: #f6f5f2; }
+  header { height: 64px; display: flex; align-items: center; padding: 0 24px; background: #fff; border-bottom: 1px solid #ddd; }
+  .menu { position: fixed; top: 0; right: 0; width: 320px; height: 100vh; background: #222; color: #fff; padding: 24px; transform: translateX(100%); }
+  .sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+  section { padding: 80px 24px; }
+  h1 { font-size: 40px; margin: 0 0 16px; }
+  h2 { font-size: 28px; margin: 0 0 24px; }
+  /* designed peeking carousel 1: a native horizontal scroller with snap points */
+  .peek-scroll { display: flex; gap: 16px; overflow-x: auto; scroll-snap-type: x mandatory; margin: 0 -24px; padding: 0 24px; }
+  .peek-card { flex: 0 0 300px; height: 220px; scroll-snap-align: start; border-radius: 12px; background: #e3ddd2; padding: 20px; box-sizing: border-box; }
+  /* designed peeking carousel 2: a clipped track with carousel semantics (buttons move it) */
+  .peek-frame { overflow: hidden; margin-top: 40px; }
+  .peek-track { display: flex; gap: 16px; }
+  .peek-track .peek-card { background: #d6dfe3; }
+  /* the defect: a fixed five-column footer grid (1000 px + gaps) that does not reflow at 768 */
+  footer { background: #1c1c1c; color: #eee; padding: 64px 24px; }
+  .fgrid { display: grid; grid-template-columns: repeat(5, 200px); gap: 24px; }
+  .fgrid h3 { font-size: 14px; margin: 0 0 12px; color: #fff; }
+  .fgrid ul { list-style: none; margin: 0; padding: 0; }
+  .flink { color: #ccc; text-decoration: none; font-size: 14px; line-height: 2; white-space: nowrap; }
+</style>
+</head>
+<body>
+<header><strong>Fieldnote Studio</strong><span class="sr-only">Skip to the main content of this page, which is long enough to cross the edge</span></header>
+<nav class="menu" aria-label="Menu"><a href="#" style="color:#fff">Work</a> <a href="#" style="color:#fff">About the studio and its people</a></nav>
+<main>
+  <section>
+    <h1>Gardens planned around the seasons</h1>
+    <p>Small planting plans for courtyards, roofs and shared yards, drawn and planted by one team.</p>
+  </section>
+  <section>
+    <h2>Recent projects</h2>
+    <div class="peek-scroll">
+      <div class="peek-card"><p class="card-text">Courtyard of ferns and moss under two old pear trees</p></div>
+      <div class="peek-card"><p class="card-text">Roof meadow with grasses that hold the wind</p></div>
+      <div class="peek-card"><p class="card-text">Shared yard with raised beds for twelve households</p></div>
+      <div class="peek-card"><p class="card-text">Shade border of hostas, hellebores and ferns</p></div>
+    </div>
+    <div class="peek-frame" aria-roledescription="carousel" aria-label="Seasonal notes">
+      <div class="peek-track">
+        <div class="peek-card"><p class="card-text">Spring: dividing perennials before the first growth</p></div>
+        <div class="peek-card"><p class="card-text">Summer: watering deep and seldom through the dry weeks</p></div>
+        <div class="peek-card"><p class="card-text">Autumn: planting bulbs in drifts along the path edges</p></div>
+        <div class="peek-card"><p class="card-text">Winter: pruning fruit trees on a dry still morning</p></div>
+      </div>
+    </div>
+  </section>
+</main>
+<footer>
+  <div class="fgrid">
+    <div class="fcol"><h3>Studio</h3><ul><li><a class="flink" href="#">About the studio</a></li><li><a class="flink" href="#">Our planting team</a></li></ul></div>
+    <div class="fcol"><h3>Services</h3><ul><li><a class="flink" href="#">Courtyard plans</a></li><li><a class="flink" href="#">Roof meadows</a></li></ul></div>
+    <div class="fcol"><h3>Journal</h3><ul><li><a class="flink" href="#">Seasonal notes</a></li><li><a class="flink" href="#">Plant lists</a></li></ul></div>
+    <div class="fcol"><h3>Visit</h3><ul><li><a class="flink" href="#">Open garden days</a></li><li><a class="flink" href="#">Workshops and walks</a></li></ul></div>
+    <div class="fcol"><h3>Contact</h3><ul><li><a class="flink" href="#">Write to the studio</a></li><li><a class="flink" href="#">Press enquiries</a></li></ul></div>
+  </div>
+</footer>
+</body>
+</html>

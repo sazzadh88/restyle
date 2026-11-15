@@ -1,0 +1,16 @@
+{
+  "name": "restyle-scripts",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Capture, compare and serve scripts for the restyle skill. Run `npm install` here once; uses the installed Google Chrome (never downloads a browser).",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "culori": "^4.0.2",
+    "pixelmatch": "^8.0.0",
+    "playwright-core": "^1.65.1",
+    "pngjs": "^7.0.0"
+  }
+}

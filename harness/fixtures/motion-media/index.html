@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Media motion fixture</title>
+<style>
+  /* First-screen media motion with known behaviour (harness/check-motion.mjs, media part). Four media boxes
+     made of HTML, none of them an image, video or canvas:
+       .mk-win    a UI mock-up window whose three states cross-fade every 1.6 s (the first state fades in on
+                  load): a media box (kind panel); the state fade is media activity, never a load group, and
+                  never delays the settle time
+       .mk-stack  a stack of three overlapping cards cycling every 2 s, fading in with the load staging (500 ms):
+                  a media box (card stack)
+       .mk-art    an illustration frame with a track of labelled tiles sliding left (CSS, strip twice its
+                  window): lateral travel inside the box, never a marquee
+       .mk-cur    a static UI mock-up in which a small cursor with a name tag hops every 2 s: low,
+                  intermittent activity, never static
+     Outside the media: a word swapping in the headline every 2 s (from 6 s after load, after the load strip),
+     a row of step chips lighting up in turn every 1.5 s and a data-feed list gaining a row every 1.7 s
+     (below the first screen): auto-advance found by the slow watch (text / colour state changes). */
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: Arial, Helvetica, sans-serif; color: #18202e; background: #ffffff; }
+  header.nav { height: 64px; display: flex; align-items: center; justify-content: space-between; padding: 0 64px; border-bottom: 1px solid #e4e8ef; }
+  header.nav a { color: #18202e; text-decoration: none; margin-left: 24px; font-size: 15px; }
+  .hero { display: grid; grid-template-columns: 456px 420px 420px; gap: 20px; padding: 36px 64px 0; height: 836px; }
+  .copy { padding-top: 120px; }
+  .copy h1 { font-size: 52px; line-height: 1.1; }
+  .copy p { font-size: 19px; line-height: 1.5; margin-top: 22px; color: #4a5468; }
+  .copy .cta { display: inline-block; margin-top: 30px; padding: 14px 26px; border-radius: 10px; background: #2b59ff; color: #ffffff; font-size: 17px; text-decoration: none; }
+  @keyframes ld { from { opacity: 0; transform: translateY(16px); } }
+  .ld { animation: ld 600ms ease-out both; }
+  .ld-1 { animation-delay: 100ms; } .ld-2 { animation-delay: 250ms; } .ld-3 { animation-delay: 400ms; } .ld-4 { animation-delay: 500ms; }
+  .col { display: flex; flex-direction: column; gap: 20px; }
+  .box { position: relative; height: 380px; border-radius: 18px; overflow: hidden; }
+  /* 1. UI mock-up window with cycling states */
+  .mk-win { background: #f4f6fb; border: 1px solid #dfe4ee; box-shadow: 0 8px 24px rgba(20, 30, 60, 0.12); }
+  .mk-bar { height: 34px; display: flex; gap: 8px; align-items: center; padding: 0 14px; background: #e9edf5; }
+  .mk-bar i { width: 11px; height: 11px; border-radius: 50%; background: #c3cad8; display: block; }
+  .mk-side { position: absolute; left: 0; top: 34px; bottom: 0; width: 120px; padding: 14px 10px; background: #edf0f7; }
+  .mk-side span { display: block; height: 22px; margin-bottom: 9px; border-radius: 6px; background: #dfe4ee; font-size: 11px; line-height: 22px; padding-left: 8px; color: #5b6578; }
+  .mk-states { position: absolute; left: 136px; right: 16px; top: 50px; bottom: 16px; }
+  .mk-state { position: absolute; inset: 0; opacity: 0; transition: opacity 400ms ease; }
+  .mk-state.on { opacity: 1; }
+  .mk-state b { display: block; font-size: 13px; margin-bottom: 10px; }
+  .mk-state em { display: block; height: 34px; margin-bottom: 10px; border-radius: 8px; font-style: normal; font-size: 12px; line-height: 34px; padding-left: 10px; color: #ffffff; }
+  .s1 em { background: #3d6cff; } .s2 em { background: #12a37a; } .s3 em { background: #e2672c; }
+  .mk-state em:nth-child(3) { width: 70%; } .mk-state em:nth-child(4) { width: 85%; opacity: 0.8; }
+  /* 2. card stack */
+  .mk-stack { overflow: visible; }
+  .mk-card { position: absolute; left: 30px; top: 30px; width: 330px; height: 290px; border-radius: 16px; padding: 18px; font-size: 12px; color: #ffffff; box-shadow: 0 10px 30px rgba(10, 20, 40, 0.2); transition: transform 500ms ease, opacity 500ms ease; }
+  .mk-card i { display: block; height: 150px; margin-top: 12px; border-radius: 10px; background: rgba(255, 255, 255, 0.35); }
+  .c1 { background: #5a3fd1; } .c2 { background: #0f8f86; } .c3 { background: #c43c6b; }
+  .mk-card.p0 { transform: translate(0, 0); z-index: 3; }
+  .mk-card.p1 { transform: translate(24px, 24px); z-index: 2; }
+  .mk-card.p2 { transform: translate(48px, 48px); z-index: 1; }
+  .mk-card.out { transform: translate(-60px, 40px) rotate(-6deg); opacity: 0; z-index: 4; }
+  /* 3. illustration frame with a sliding track of labelled tiles */
+  .mk-art { background: #fff4e5; }
+  .mk-sun { position: absolute; left: 40px; top: 36px; width: 90px; height: 90px; border-radius: 50%; background: #ffb547; }
+  .mk-hill { position: absolute; right: 30px; top: 50px; width: 150px; height: 70px; border-radius: 40px; background: #ffd8a6; }
+  .mk-track { position: absolute; left: 0; top: 190px; display: flex; gap: 16px; width: max-content; animation: slide 8s linear infinite; }
+  .mk-track span { width: 120px; height: 120px; border-radius: 14px; font-size: 13px; line-height: 120px; text-align: center; color: #ffffff; font-weight: 700; }
+  .mk-track span:nth-child(4n+1) { background: #ff7a45; } .mk-track span:nth-child(4n+2) { background: #2f9e44; }
+  .mk-track span:nth-child(4n+3) { background: #1c7ed6; } .mk-track span:nth-child(4n) { background: #ae3ec9; }
+  @keyframes slide { to { transform: translateX(-50%); } }
+  /* 4. static mock-up with a cursor hopping now and then */
+  .mk-cur { background: #ffffff; border: 1px solid #dfe4ee; box-shadow: 0 8px 24px rgba(20, 30, 60, 0.1); padding: 46px 18px 18px; }
+  .mk-cur .mk-bar { position: absolute; left: 0; right: 0; top: 0; }
+  .mk-cur p { height: 26px; margin-bottom: 12px; border-radius: 6px; background: #eef1f7; font-size: 11px; line-height: 26px; padding-left: 10px; color: #6a7487; }
+  .mk-pointer { position: absolute; left: 60px; top: 90px; transition: transform 250ms ease; }
+  .mk-pointer i { display: block; width: 16px; height: 16px; background: #e8590c; clip-path: polygon(0 0, 100% 60%, 45% 60%, 30% 100%); }
+  .mk-pointer span { display: block; margin: 2px 0 0 12px; padding: 0 8px; height: 26px; line-height: 26px; border-radius: 6px; background: #e8590c; color: #ffffff; font-size: 12px; white-space: nowrap; }
+  /* below the first screen: step chips and a data feed */
+  .band { padding: 110px 64px; }
+  .band h2 { font-size: 34px; margin-bottom: 28px; }
+  .mk-chips { display: flex; gap: 12px; }
+  .mk-chip { padding: 10px 18px; border-radius: 999px; background: #eef1f7; color: #3a4456; font-size: 15px; }
+  .mk-chip.on { background: #2b59ff; color: #ffffff; }
+  .mk-feed { list-style: none; width: 620px; height: 240px; overflow: hidden; border: 1px solid #e4e8ef; border-radius: 12px; }
+  .mk-feed li { height: 48px; line-height: 48px; padding: 0 18px; border-bottom: 1px solid #eef1f7; font-size: 15px; }
+  footer { padding: 70px 64px; background: #18202e; color: #ffffff; }
+</style>
+</head>
+<body>
+<header class="nav">
+  <strong>Fixture Studio</strong>
+  <nav><a href="#a">Product</a><a href="#b">Pricing</a><a href="#c">Docs</a></nav>
+</header>
+<section class="hero">
+  <div class="copy">
+    <h1 class="ld ld-1">Plan your <span class="mk-swap">week</span> in one place</h1>
+    <p class="ld ld-2">Every motion on this page is written down in the check, so a capture can be held against it.</p>
+    <a class="cta ld ld-3" href="#start">Start free</a>
+  </div>
+  <div class="col">
+    <div class="box mk-win" aria-hidden="true">
+      <div class="mk-bar"><i></i><i></i><i></i></div>
+      <div class="mk-side"><span>Inbox</span><span>Today</span><span>Upcoming</span><span>Projects</span><span>Archive</span></div>
+      <div class="mk-states">
+        <div class="mk-state s1"><b>Review the draft</b><em>Assigned to you</em><em>Due Friday</em><em>2 comments</em></div>
+        <div class="mk-state s2"><b>Ship the update</b><em>In progress</em><em>Due Monday</em><em>5 tasks</em></div>
+        <div class="mk-state s3"><b>Plan the launch</b><em>Blocked</em><em>Due next week</em><em>1 file</em></div>
+      </div>
+    </div>
+    <div class="box mk-art" aria-hidden="true">
+      <div class="mk-sun"></div><div class="mk-hill"></div>
+      <div class="mk-track"><span>A1</span><span>B2</span><span>C3</span><span>D4</span><span>E5</span><span>F6</span><span>G7</span><span>H8</span><span>A1</span><span>B2</span><span>C3</span><span>D4</span><span>E5</span><span>F6</span><span>G7</span><span>H8</span></div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="box mk-stack ld ld-4" aria-hidden="true">
+      <div class="mk-card c1 p0">Weekly report<i></i></div>
+      <div class="mk-card c2 p1">Team board<i></i></div>
+      <div class="mk-card c3 p2">Roadmap<i></i></div>
+    </div>
+    <div class="box mk-cur" aria-hidden="true">
+      <div class="mk-bar"><i></i><i></i><i></i></div>
+      <p>Notes for the planning call</p><p>Open questions</p><p>Decisions so far</p><p>Next steps</p><p>Owners and dates</p><p>Links</p>
+      <div class="mk-pointer"><i></i><span>Robin</span></div>
+    </div>
+  </div>
+</section>
+<section class="band">
+  <h2>Steps that light up in turn</h2>
+  <div class="mk-chips"><span class="mk-chip on">Draft</span><span class="mk-chip">Review</span><span class="mk-chip">Approve</span><span class="mk-chip">Publish</span></div>
+</section>
+<section class="band">
+  <h2>A feed that keeps ticking</h2>
+  <ul class="mk-feed" id="feed"><li>Order 1001 shipped</li><li>Order 1000 packed</li><li>Order 999 paid</li><li>Order 998 placed</li></ul>
+</section>
+<section class="band"><h2>More content</h2><p style="font-size:18px;line-height:1.6;max-width:760px">A plain band so the page scrolls past the first screen.</p></section>
+<footer>Fixture Studio</footer>
+<script>
+  // 1. mock-up states: the first fades in at once (load), then one every 1.6 s
+  (function () {
+    const s = document.querySelectorAll('.mk-state');
+    let i = 0;
+    s[0].classList.add('on');
+    setInterval(() => { s[i].classList.remove('on'); i = (i + 1) % s.length; s[i].classList.add('on'); }, 1600);
+  })();
+  // 2. card stack: the top card leaves and goes to the back every 2 s
+  (function () {
+    const cards = [...document.querySelectorAll('.mk-card')];
+    let order = [0, 1, 2];
+    setInterval(() => {
+      const top = cards[order[0]];
+      top.className = top.className.replace(/\bp\d\b/, 'out');
+      setTimeout(() => {
+        order = order.slice(1).concat(order[0]);
+        order.forEach((k, pos) => { cards[k].className = cards[k].className.replace(/\b(p\d|out)\b/, 'p' + pos); });
+      }, 500);
+    }, 2000);
+  })();
+  // 4. cursor hops between a few spots every 2 s
+  (function () {
+    const p = document.querySelector('.mk-pointer');
+    const spots = [[0, 0], [190, 60], [70, 170], [230, 210]];
+    let k = 0;
+    setInterval(() => { k = (k + 1) % spots.length; p.style.transform = 'translate(' + spots[k][0] + 'px,' + spots[k][1] + 'px)'; }, 2000);
+  })();
+  // headline word swap every 2 s, from 6 s after load (after the load strip)
+  (function () {
+    const w = document.querySelector('.mk-swap');
+    const words = ['week', 'month', 'team', 'launch'];
+    let k = 0;
+    setTimeout(() => setInterval(() => { k = (k + 1) % words.length; w.textContent = words[k]; }, 2000), 6000);
+  })();
+  // step chips light up in turn every 1.5 s
+  (function () {
+    const c = document.querySelectorAll('.mk-chip');
+    let k = 0;
+    setInterval(() => { c[k].classList.remove('on'); k = (k + 1) % c.length; c[k].classList.add('on'); }, 1500);
+  })();
+  // data feed: a new row on top every 1.7 s (the last row drops off)
+  (function () {
+    const f = document.getElementById('feed');
+    let n = 1002;
+    setInterval(() => { const li = document.createElement('li'); li.textContent = 'Order ' + (n++) + ' shipped'; f.insertBefore(li, f.firstChild); if (f.children.length > 6) f.lastChild.remove(); }, 1700);
+  })();
+</script>
+</body>
+</html>

@@ -1,0 +1,5270 @@
+[
+  {
+    "slug": "linear",
+    "url": "https://linear.app",
+    "group": "pilot",
+    "style": "dark SaaS",
+    "brief": {
+      "name": "Harrowgate Grain Co.",
+      "pitch": "Stone-milled heritage flours delivered from a regenerative farm cooperative.",
+      "nav": [
+        "Flours",
+        "Bakers",
+        "Our farms",
+        "Recipes",
+        "Wholesale"
+      ],
+      "hero": {
+        "headline": "Flour with a harvest date on the bag",
+        "sub": "Twelve family farms, one granite mill, and wheat varieties your great-grandmother would recognise.",
+        "primaryCta": "Shop flours",
+        "secondaryCta": "Meet the farmers"
+      },
+      "features": [
+        {
+          "title": "Milled to order",
+          "body": "Every sack is ground the week it ships, so the germ and its oils are still fresh."
+        },
+        {
+          "title": "Traceable to the field",
+          "body": "Scan the bag to see which farm, which field and which week the grain came in."
+        },
+        {
+          "title": "Heritage varieties",
+          "body": "Red Fife, Sonora, Turkey Red and einkorn, grown without synthetic inputs."
+        },
+        {
+          "title": "Baker-tested blends",
+          "body": "Pastry, pizza and sourdough blends tuned with working bakers."
+        },
+        {
+          "title": "Plastic-free packing",
+          "body": "Paper sacks and compostable liners, shipped in recycled cartons."
+        },
+        {
+          "title": "Bulk for kitchens",
+          "body": "Restaurants and bakeries order 25 kg sacks on a standing schedule."
+        }
+      ],
+      "stats": [
+        {
+          "value": "12",
+          "label": "partner farms"
+        },
+        {
+          "value": "340 t",
+          "label": "grain milled last year"
+        },
+        {
+          "value": "48 h",
+          "label": "mill to doorstep"
+        },
+        {
+          "value": "9",
+          "label": "heritage varieties"
+        }
+      ],
+      "testimonials": [
+        {
+          "quote": "Our country loaf finally tastes like something. Customers ask what changed.",
+          "name": "Ines Valdivia",
+          "role": "Head baker, Corner Hearth"
+        },
+        {
+          "quote": "I can tell my kids which field their pancakes came from. That matters to us.",
+          "name": "Tom Akerley",
+          "role": "Home baker"
+        },
+        {
+          "quote": "Consistent hydration week to week, which is rare for whole grain.",
+          "name": "Priya Natesan",
+          "role": "Pastry chef"
+        }
+      ],
+      "pricing": [
+        {
+          "name": "Home",
+          "price": "$14/mo",
+          "blurb": "Two fresh bags monthly for home bakers.",
+          "bullets": [
+            "2 x 2 kg bags",
+            "Rotating heritage pick",
+            "Recipe card each box",
+            "Skip any month"
+          ]
+        },
+        {
+          "name": "Serious Baker",
+          "price": "$32/mo",
+          "blurb": "For weekly bread and pastry habits.",
+          "bullets": [
+            "4 x 2 kg bags",
+            "Choose your varieties",
+            "Early access to new harvests",
+            "Free starter culture"
+          ]
+        },
+        {
+          "name": "Kitchen",
+          "price": "$180/mo",
+          "blurb": "Standing order for small bakeries and cafes.",
+          "bullets": [
+            "8 x 25 kg sacks",
+            "Custom blends",
+            "Dedicated miller contact",
+            "Net-30 invoicing"
+          ]
+        }
+      ],
+      "articles": [
+        {
+          "title": "Why fresh flour behaves differently",
+          "excerpt": "Oils in the germ change how dough ferments and how quickly it goes stale.",
+          "tag": "Science"
+        },
+        {
+          "title": "A field walk in late June",
+          "excerpt": "Notes from the Pettigrew farm as the Red Fife turns gold.",
+          "tag": "Farms"
+        },
+        {
+          "title": "Einkorn shortbread, three ways",
+          "excerpt": "Brown butter, rosemary and a sea-salt version that disappears fast.",
+          "tag": "Recipes"
+        },
+        {
+          "title": "Reading a falling-number test",
+          "excerpt": "What millers check before grain ever touches the stones.",
+          "tag": "Milling"
+        },
+        {
+          "title": "The case for slower bread",
+          "excerpt": "Long fermentation, wild yeast and what it does for digestion.",
+          "tag": "Baking"
+        },
+        {
+          "title": "Meet the miller: Ruth Okafor",
+          "excerpt": "Twenty years at the stones and the one tool she will not replace.",
+          "tag": "People"
+        }
+      ],
+      "products": [
+        {
+          "name": "Red Fife Whole Wheat",
+          "price": "$9",
+          "note": "2 kg, milled weekly"
+        },
+        {
+          "name": "Sonora Pastry Flour",
+          "price": "$10",
+          "note": "Soft white, low protein"
+        },
+        {
+          "name": "Einkorn Sifted",
+          "price": "$14",
+          "note": "Ancient grain, 1.5 kg"
+        },
+        {
+          "name": "Neapolitan Pizza Blend",
+          "price": "$11",
+          "note": "Type 00 style, 2 kg"
+        },
+        {
+          "name": "Rye Pumpernickel",
+          "price": "$8",
+          "note": "Coarse, for dense loaves"
+        },
+        {
+          "name": "Starter Kit",
+          "price": "$24",
+          "note": "Culture, jar and guide"
+        }
+      ],
+      "cta": {
+        "headline": "Bake with this week's harvest",
+        "sub": "First box ships Friday. Pause or cancel whenever you like.",
+        "button": "Start a subscription"
+      },
+      "footer": {
+        "columns": [
+          {
+            "title": "Shop",
+            "links": [
+              "Flours",
+              "Bakers",
+              "Our farms",
+              "Recipes"
+            ]
+          },
+          {
+            "title": "Company",
+            "links": [
+              "About",
+              "Careers",
+              "Press",
+              "Contact"
+            ]
+          },
+          {
+            "title": "Resources",
+            "links": [
+              "Journal",
+              "Help center",
+              "Guides",
+              "Community"
+            ]
+          },
+          {
+            "title": "Legal",
+            "links": [
+              "Privacy",
+              "Terms",
+              "Cookies",
+              "Accessibility"
+            ]
+          }
+        ],
+        "legal": "© 2026 Harrowgate Grain Co.. All rights reserved."
+      }
+    }
+  },
+  {
+    "slug": "stripe",
+    "url": "https://stripe.com",
+    "group": "pilot",
+    "style": "light, gradients",
+    "brief": {
+      "name": "Tidewell Marine Clinics",
+      "pitch": "Mobile veterinary care for working dogs, horses and farm animals across the coast.",
+      "nav": [
+        "Services",
+        "Coverage map",
+        "For farms",
+        "Emergency",
+        "Book a visit"
+      ],
+      "hero": {
+        "headline": "The vet comes to the paddock",
+        "sub": "Fully equipped clinic vans for large animals and working dogs, from routine checks to night-time calvings.",
+        "primaryCta": "Book a visit",
+        "secondaryCta": "See coverage"
+      },
+      "features": [
+        {
+          "title": "Clinic on wheels",
+          "body": "Portable ultrasound, digital x-ray and a surgical table in every van."
+        },
+        {
+          "title": "24/7 emergency line",
+          "body": "A vet answers within ten minutes, day or night, including holidays."
+        },
+        {
+          "title": "Herd health plans",
+          "body": "Seasonal vaccination and parasite schedules built around your stock."
+        },
+        {
+          "title": "Equine dentistry",
+          "body": "Sedation-light dental floats done in the stable, not a trailer ride away."
+        },
+        {
+          "title": "Shared records",
+          "body": "Owners, farm managers and farriers see the same history in one place."
+        },
+        {
+          "title": "Transparent pricing",
+          "body": "Callout fees and procedures quoted before the van leaves the depot."
+        }
+      ],
+      "stats": [
+        {
+          "value": "18",
+          "label": "clinic vans"
+        },
+        {
+          "value": "4,200",
+          "label": "farms on our books"
+        },
+        {
+          "value": "38 min",
+          "label": "average emergency arrival"
+        },
+        {
+          "value": "96%",
+          "label": "follow-ups completed"
+        }
+      ],
+      "testimonials": [
+        {
+          "quote": "They were in the barn forty minutes after I called, at two in the morning.",
+          "name": "Gareth Lowe",
+          "role": "Dairy farmer"
+        },
+        {
+          "quote": "The herd plan cut our vet spend and our losses in the same year.",
+          "name": "Maeve Donnelly",
+          "role": "Farm manager"
+        },
+        {
+          "quote": "My eventing horses hate trailers. Stable visits changed everything.",
+          "name": "Simone Achebe",
+          "role": "Equestrian coach"
+        }
+      ],
+      "pricing": [
+        {
+          "name": "Companion",
+          "price": "$29/mo",
+          "blurb": "Working dogs and small holdings.",
+          "bullets": [
+            "Two routine visits a year",
+            "Vaccines included",
+            "Phone triage",
+            "10% off treatments"
+          ]
+        },
+        {
+          "name": "Smallholding",
+          "price": "$89/mo",
+          "blurb": "Mixed stock up to 40 animals.",
+          "bullets": [
+            "Quarterly herd checks",
+            "Parasite programme",
+            "Priority emergency slot",
+            "Annual health report"
+          ]
+        },
+        {
+          "name": "Estate",
+          "price": "Custom",
+          "blurb": "Commercial herds and equestrian yards.",
+          "bullets": [
+            "Dedicated vet team",
+            "On-site lab testing",
+            "Breeding programme support",
+            "Monthly reporting"
+          ]
+        }
+      ],
+      "articles": [
+        {
+          "title": "Preparing for lambing season",
+          "excerpt": "A checklist for the six weeks before the first ewe goes down.",
+          "tag": "Seasonal"
+        },
+        {
+          "title": "Colic: what to do before we arrive",
+          "excerpt": "Calm, practical steps that genuinely help the horse.",
+          "tag": "Equine"
+        },
+        {
+          "title": "Inside a clinic van",
+          "excerpt": "A tour of the kit we carry and why each piece earns its space.",
+          "tag": "Behind the scenes"
+        },
+        {
+          "title": "Heat stress in working dogs",
+          "excerpt": "Signs to watch for on long summer shifts.",
+          "tag": "Dogs"
+        },
+        {
+          "title": "Building a herd health plan",
+          "excerpt": "How we set vaccination and testing calendars with farmers.",
+          "tag": "Guides"
+        },
+        {
+          "title": "Why we stopped charging mileage",
+          "excerpt": "The maths behind a flat callout fee.",
+          "tag": "Company"
+        }
+      ],
+      "products": [
+        {
+          "name": "Lambing First-Aid Kit",
+          "price": "$64",
+          "note": "Assembled by our vets"
+        },
+        {
+          "name": "Equine Wound Spray",
+          "price": "$18",
+          "note": "Silver-based, 250 ml"
+        },
+        {
+          "name": "Working Dog Paw Balm",
+          "price": "$12",
+          "note": "Lanolin and beeswax"
+        },
+        {
+          "name": "Digital Livestock Thermometer",
+          "price": "$22",
+          "note": "Fast read, waterproof"
+        },
+        {
+          "name": "Electrolyte Paste",
+          "price": "$15",
+          "note": "For hot-weather work"
+        },
+        {
+          "name": "Herd Record Binder",
+          "price": "$9",
+          "note": "Printed treatment logs"
+        }
+      ],
+      "cta": {
+        "headline": "Get your animals on the schedule",
+        "sub": "Tell us your stock and postcode and we will plan your first visit.",
+        "button": "Book a visit"
+      },
+      "footer": {
+        "columns": [
+          {
+            "title": "Explore",
+            "links": [
+              "Services",
+              "Coverage map",
+              "For farms",
+              "Emergency"
+            ]
+          },
+          {
+            "title": "Company",
+            "links": [
+              "About",
+              "Careers",
+              "Press",
+              "Contact"
+            ]
+          },
+          {
+            "title": "Resources",
+            "links": [
+              "Journal",
+              "Help center",
+              "Guides",
+              "Community"
+            ]
+          },
+          {
+            "title": "Legal",
+            "links": [
+              "Privacy",
+              "Terms",
+              "Cookies",
+              "Accessibility"
+            ]
+          }
+        ],
+        "legal": "© 2026 Tidewell Marine Clinics. All rights reserved."
+      }
+    }
+  },
+  {
+    "slug": "aesop",
+    "url": "https://www.aesop.com",
+    "group": "pilot",
+    "style": "minimal e-commerce",
+    "brief": {
+      "name": "Quillon & Vale",
+      "pitch": "Independent publisher of slim literary translations, bound by hand in small runs.",
+      "nav": [
+        "Catalogue",
+        "Translators",
+        "Subscriptions",
+        "Journal",
+        "Stockists"
+      ],
+      "hero": {
+        "headline": "Small books, carefully carried across",
+        "sub": "Contemporary fiction and essays from eleven languages, printed on cotton paper in editions of five hundred.",
+        "primaryCta": "Browse the catalogue",
+        "secondaryCta": "Subscribe"
+      },
+      "features": [
+        {
+          "title": "Translated with care",
+          "body": "Each translator works with the author over months, not weeks."
+        },
+        {
+          "title": "Hand-sewn bindings",
+          "body": "Thread-sewn signatures that open flat and last generations."
+        },
+        {
+          "title": "Numbered editions",
+          "body": "Every run is limited and individually numbered on the colophon."
+        },
+        {
+          "title": "Translator royalties",
+          "body": "Translators share in every copy sold, credited on the cover."
+        },
+        {
+          "title": "Reading notes",
+          "body": "Each book arrives with a short essay on its language and place."
+        },
+        {
+          "title": "Library programme",
+          "body": "One copy of every title donated to a public library."
+        }
+      ],
+      "stats": [
+        {
+          "value": "46",
+          "label": "titles in print"
+        },
+        {
+          "value": "11",
+          "label": "source languages"
+        },
+        {
+          "value": "500",
+          "label": "copies per edition"
+        },
+        {
+          "value": "230",
+          "label": "libraries supplied"
+        }
+      ],
+      "testimonials": [
+        {
+          "quote": "The most beautiful object on my shelf, and the prose is better still.",
+          "name": "Lucía Ferro",
+          "role": "Reader, Madrid"
+        },
+        {
+          "quote": "They treat the translator as an author. That is still unusual.",
+          "name": "Henrik Saari",
+          "role": "Translator"
+        },
+        {
+          "quote": "Our customers wait for each new title like a vinyl release.",
+          "name": "Odile Marchand",
+          "role": "Bookseller"
+        }
+      ],
+      "pricing": [
+        {
+          "name": "Reader",
+          "price": "$18/mo",
+          "blurb": "One new title every month.",
+          "bullets": [
+            "Monthly new release",
+            "Reading notes",
+            "Members' journal",
+            "Free shipping"
+          ]
+        },
+        {
+          "name": "Collector",
+          "price": "$42/qtr",
+          "blurb": "Three titles with matching numbers.",
+          "bullets": [
+            "Same edition numbers each time",
+            "Signed bookplate",
+            "Slipcase each year",
+            "Early catalogue access"
+          ]
+        },
+        {
+          "name": "Patron",
+          "price": "$300/yr",
+          "blurb": "Fund a translation from start to finish.",
+          "bullets": [
+            "Credit in the colophon",
+            "All titles for the year",
+            "Translator dinner invite",
+            "Archive proofs"
+          ]
+        }
+      ],
+      "articles": [
+        {
+          "title": "On translating silence",
+          "excerpt": "How to carry a language that leaves things unsaid into one that does not.",
+          "tag": "Essay"
+        },
+        {
+          "title": "The paper mill in Fabriano",
+          "excerpt": "Where our cotton paper is made and why it costs what it does.",
+          "tag": "Making"
+        },
+        {
+          "title": "A conversation with Mira Haddad",
+          "excerpt": "On rendering Beirut slang into English without flattening it.",
+          "tag": "Interview"
+        },
+        {
+          "title": "Autumn catalogue notes",
+          "excerpt": "Four new titles, three new languages, one long-awaited reissue.",
+          "tag": "Catalogue"
+        },
+        {
+          "title": "Why we stay small",
+          "excerpt": "Five hundred copies is a decision, not a limitation.",
+          "tag": "Company"
+        },
+        {
+          "title": "Reading lists for long trains",
+          "excerpt": "Books that suit a window seat and a few hours.",
+          "tag": "Lists"
+        }
+      ],
+      "products": [
+        {
+          "name": "The Salt Archive",
+          "price": "$26",
+          "note": "Translated from Portuguese"
+        },
+        {
+          "name": "Nine Rooms in Tbilisi",
+          "price": "$24",
+          "note": "Translated from Georgian"
+        },
+        {
+          "name": "Lowlands",
+          "price": "$22",
+          "note": "Essays, from Dutch"
+        },
+        {
+          "name": "A Winter Grammar",
+          "price": "$28",
+          "note": "Translated from Finnish"
+        },
+        {
+          "name": "Notebook in Kraft",
+          "price": "$14",
+          "note": "Cotton paper, sewn"
+        },
+        {
+          "name": "Linen Book Bag",
+          "price": "$32",
+          "note": "Natural undyed linen"
+        }
+      ],
+      "cta": {
+        "headline": "A new language on your doorstep each month",
+        "sub": "Begin with any title in the catalogue.",
+        "button": "Become a reader"
+      },
+      "footer": {
+        "columns": [
+          {
+            "title": "Books",
+            "links": [
+              "Catalogue",
+              "Translators",
+              "Subscriptions",
+              "Journal"
+            ]
+          },
+          {
+            "title": "Company",
+            "links": [
+              "About",
+              "Careers",
+              "Press",
+              "Contact"
+            ]
+          },
+          {
+            "title": "Resources",
+            "links": [
+              "Journal",
+              "Translators",
+              "Submissions",
+              "Events"
+            ]
+          },
+          {
+            "title": "Legal",
+            "links": [
+              "Privacy",
+              "Terms",
+              "Cookies",
+              "Accessibility"
+            ]
+          }
+        ],
+        "legal": "© 2026 Quillon & Vale. All rights reserved."
+      }
+    }
+  },
+  {
+    "slug": "theverge",
+    "url": "https://www.theverge.com",
+    "group": "pilot",
+    "style": "editorial",
+    "brief": {
+      "name": "Fieldnote Weekly",
+      "pitch": "Independent newsroom covering the outdoors, climbing, trail running and conservation.",
+      "nav": [
+        "News",
+        "Gear",
+        "Routes",
+        "Conservation",
+        "Podcasts",
+        "Newsletter"
+      ],
+      "hero": {
+        "headline": "The trail, reported properly",
+        "sub": "Daily reporting on the people, places and policies shaping the backcountry, written by people who actually go out.",
+        "primaryCta": "Read today's stories",
+        "secondaryCta": "Get the newsletter"
+      },
+      "features": [
+        {
+          "title": "Reported from the field",
+          "body": "Our writers file from trailheads, base camps and county hearings."
+        },
+        {
+          "title": "Gear tested for a season",
+          "body": "No first-impression reviews: every pick survives months of real use."
+        },
+        {
+          "title": "Route guides",
+          "body": "Detailed beta with maps, water sources and seasonal conditions."
+        },
+        {
+          "title": "Land-access tracker",
+          "body": "Follow closures, permits and public-land bills as they move."
+        },
+        {
+          "title": "Long reads on Sundays",
+          "body": "One deeply reported feature every weekend."
+        },
+        {
+          "title": "No affiliate pressure",
+          "body": "Reviews are written before any commercial links are added."
+        }
+      ],
+      "stats": [
+        {
+          "value": "2.1M",
+          "label": "monthly readers"
+        },
+        {
+          "value": "140",
+          "label": "routes documented"
+        },
+        {
+          "value": "38",
+          "label": "staff and contributors"
+        },
+        {
+          "value": "12",
+          "label": "awards this year"
+        }
+      ],
+      "testimonials": [
+        {
+          "quote": "The only outdoor outlet I trust on gear. They actually break things.",
+          "name": "Rafael Ortiz",
+          "role": "Mountain guide"
+        },
+        {
+          "quote": "Their land-access coverage is required reading in our office.",
+          "name": "Dana Whitfield",
+          "role": "Trails coalition director"
+        },
+        {
+          "quote": "Sunday features are the best part of my week.",
+          "name": "Kai Nakamura",
+          "role": "Reader since launch"
+        }
+      ],
+      "pricing": [
+        {
+          "name": "Free",
+          "price": "$0",
+          "blurb": "Daily news and the weekly digest.",
+          "bullets": [
+            "All news stories",
+            "Weekly newsletter",
+            "Comment access",
+            "Podcast feeds"
+          ]
+        },
+        {
+          "name": "Supporter",
+          "price": "$6/mo",
+          "blurb": "Fund independent outdoor reporting.",
+          "bullets": [
+            "Ad-free reading",
+            "Full route archive",
+            "Member forum",
+            "Printable maps"
+          ]
+        },
+        {
+          "name": "Field Club",
+          "price": "$90/yr",
+          "blurb": "For readers who want to go further.",
+          "bullets": [
+            "Everything in Supporter",
+            "Quarterly print annual",
+            "Guided member trips",
+            "Live Q&As with reporters"
+          ]
+        }
+      ],
+      "articles": [
+        {
+          "title": "The quiet fight over the north ridge permits",
+          "excerpt": "A county board, a ski developer and three thousand public comments.",
+          "tag": "Conservation"
+        },
+        {
+          "title": "We wore the same rain shell for 200 days",
+          "excerpt": "What failed first, and what never did.",
+          "tag": "Gear"
+        },
+        {
+          "title": "A thru-hiker's last week on the trail",
+          "excerpt": "Blisters, bad weather and an unexpectedly emotional finish line.",
+          "tag": "Features"
+        },
+        {
+          "title": "Water reports for the high desert",
+          "excerpt": "Updated spring conditions for twelve popular loops.",
+          "tag": "Routes"
+        },
+        {
+          "title": "Why trail running shoes keep getting taller",
+          "excerpt": "Stack heights, foam and the science of fatigue.",
+          "tag": "Gear"
+        },
+        {
+          "title": "Podcast: the ranger who mapped every cave",
+          "excerpt": "An hour with a forty-year veteran of the park service.",
+          "tag": "Podcasts"
+        }
+      ],
+      "products": [
+        {
+          "name": "Print Annual 2026",
+          "price": "$38",
+          "note": "240 pages, lay-flat"
+        },
+        {
+          "name": "Route Map Bundle",
+          "price": "$24",
+          "note": "Six waterproof maps"
+        },
+        {
+          "name": "Field Club Cap",
+          "price": "$28",
+          "note": "Recycled nylon"
+        },
+        {
+          "name": "Trail Notebook",
+          "price": "$12",
+          "note": "Weatherproof pages"
+        },
+        {
+          "name": "Enamel Mug",
+          "price": "$18",
+          "note": "Camp-ready, 350 ml"
+        },
+        {
+          "name": "Gift Membership",
+          "price": "$90",
+          "note": "One year of Field Club"
+        }
+      ],
+      "cta": {
+        "headline": "Get the trail in your inbox",
+        "sub": "One email each weekday morning. Unsubscribe whenever.",
+        "button": "Subscribe free"
+      },
+      "footer": {
+        "columns": [
+          {
+            "title": "Sections",
+            "links": [
+              "News",
+              "Gear",
+              "Routes",
+              "Conservation"
+            ]
+          },
+          {
+            "title": "Company",
+            "links": [
+              "About",
+              "Careers",
+              "Press",
+              "Contact"
+            ]
+          },
+          {
+            "title": "Resources",
+            "links": [
+              "Journal",
+              "Help center",
+              "Guides",
+              "Community"
+            ]
+          },
+          {
+            "title": "Legal",
+            "links": [
+              "Privacy",
+              "Terms",
+              "Cookies",
+              "Accessibility"
+            ]
+          }
+        ],
+        "legal": "© 2026 Fieldnote Weekly. All rights reserved."
+      }
+    }
+  },
+  {
+    "slug": "duolingo",
+    "url": "https://www.duolingo.com",
+    "group": "pilot",
+    "style": "playful, illustrated",
+    "brief": {
+      "name": "Sproutly Gardens",
+      "pitch": "Gardening kits and a friendly app that turns kids into proud vegetable growers.",
+      "nav": [
+        "Kits",
+        "How it works",
+        "For schools",
+        "Parents",
+        "Shop"
+      ],
+      "hero": {
+        "headline": "Grow a salad before you grow up",
+        "sub": "Seed kits, cheerful reminders and tiny daily missions that teach kids where food comes from.",
+        "primaryCta": "Start growing",
+        "secondaryCta": "See the kits"
+      },
+      "features": [
+        {
+          "title": "Daily missions",
+          "body": "Two-minute tasks like watering, measuring and spotting the first leaf."
+        },
+        {
+          "title": "Grow streaks",
+          "body": "Keep your plants and your streak alive with gentle nudges."
+        },
+        {
+          "title": "Kid-proof seeds",
+          "body": "Fast, forgiving crops like radishes, peas and sunflowers."
+        },
+        {
+          "title": "Garden journal",
+          "body": "Photos and doodles turn into a book at the end of the season."
+        },
+        {
+          "title": "Classroom mode",
+          "body": "Teachers run a shared garden with the whole class."
+        },
+        {
+          "title": "Badges and harvests",
+          "body": "Earn stickers for every first sprout, first flower and first bite."
+        }
+      ],
+      "stats": [
+        {
+          "value": "310k",
+          "label": "young gardeners"
+        },
+        {
+          "value": "1.8M",
+          "label": "seedlings sprouted"
+        },
+        {
+          "value": "4,600",
+          "label": "schools growing"
+        },
+        {
+          "value": "21 days",
+          "label": "to first harvest"
+        }
+      ],
+      "testimonials": [
+        {
+          "quote": "My son now eats peas because he grew them. I did not think that was possible.",
+          "name": "Leah Brandt",
+          "role": "Parent"
+        },
+        {
+          "quote": "Our class garden is the best part of the timetable.",
+          "name": "Mr. Desmond Pike",
+          "role": "Year 3 teacher"
+        },
+        {
+          "quote": "I have a 54-day streak and four tomatoes!",
+          "name": "Ava, age 8",
+          "role": "Gardener"
+        }
+      ],
+      "pricing": [
+        {
+          "name": "Seedling",
+          "price": "$9/mo",
+          "blurb": "One kit and the app for one child.",
+          "bullets": [
+            "Monthly seed kit",
+            "Daily missions",
+            "Garden journal",
+            "Sticker pack"
+          ]
+        },
+        {
+          "name": "Family",
+          "price": "$19/mo",
+          "blurb": "Up to four gardeners at home.",
+          "bullets": [
+            "Four profiles",
+            "Bigger planter kit",
+            "Seasonal surprise seeds",
+            "Printed journal yearly"
+          ]
+        },
+        {
+          "name": "Classroom",
+          "price": "$149/yr",
+          "blurb": "Shared garden for a whole class.",
+          "bullets": [
+            "30 student profiles",
+            "Teacher dashboard",
+            "Curriculum lessons",
+            "Bulk seed refills"
+          ]
+        }
+      ],
+      "articles": [
+        {
+          "title": "Five crops that grow faster than kids lose interest",
+          "excerpt": "Radishes win, but you might be surprised by the rest.",
+          "tag": "Tips"
+        },
+        {
+          "title": "Turning a windowsill into a farm",
+          "excerpt": "Small spaces, big harvests.",
+          "tag": "Guides"
+        },
+        {
+          "title": "Why streaks work for little gardeners",
+          "excerpt": "A child psychologist on habit-building that feels like play.",
+          "tag": "Parenting"
+        },
+        {
+          "title": "Worm hotels: a weekend project",
+          "excerpt": "Build a wormery from a shoebox and some patience.",
+          "tag": "Activities"
+        },
+        {
+          "title": "School garden spotlight: Elm Street",
+          "excerpt": "How one class grew 40 kg of vegetables.",
+          "tag": "Schools"
+        },
+        {
+          "title": "Eating what you grow",
+          "excerpt": "Simple recipes kids can make from their harvest.",
+          "tag": "Recipes"
+        }
+      ],
+      "products": [
+        {
+          "name": "Rainbow Radish Kit",
+          "price": "$12",
+          "note": "Ready in 3 weeks"
+        },
+        {
+          "name": "Sunflower Race Kit",
+          "price": "$14",
+          "note": "Who grows tallest?"
+        },
+        {
+          "name": "Pea Pod Planter",
+          "price": "$18",
+          "note": "Includes trellis"
+        },
+        {
+          "name": "Kid Gardening Gloves",
+          "price": "$10",
+          "note": "Three fun colours"
+        },
+        {
+          "name": "Watering Can Buddy",
+          "price": "$16",
+          "note": "Leaf-shaped spout"
+        },
+        {
+          "name": "Bug Spotter Lens",
+          "price": "$8",
+          "note": "Magnifier and guide"
+        }
+      ],
+      "cta": {
+        "headline": "Plant the first seed today",
+        "sub": "Your first kit ships free. Little hands, big harvests.",
+        "button": "Get started"
+      },
+      "footer": {
+        "columns": [
+          {
+            "title": "Explore",
+            "links": [
+              "Kits",
+              "How it works",
+              "For schools",
+              "Parents"
+            ]
+          },
+          {
+            "title": "Company",
+            "links": [
+              "About",
+              "Careers",
+              "Press",
+              "Contact"
+            ]
+          },
+          {
+            "title": "Resources",
+            "links": [
+              "Journal",
+              "Help center",
+              "Guides",
+              "Community"
+            ]
+          },
+          {
+            "title": "Legal",
+            "links": [
+              "Privacy",
+              "Terms",
+              "Cookies",
+              "Accessibility"
+            ]
+          }
+        ],
+        "legal": "© 2026 Sproutly Gardens. All rights reserved."
+      }
+    }
+  },
+  {
+    "slug": "vercel",
+    "url": "https://vercel.com",
+    "group": "rest",
+    "style": "dark developer platform, monochrome",
+    "brief": {
+      "name": "Brightline Freight",
+      "pitch": "Same-day pallet freight with live tracking for regional manufacturers.",
+      "nav": [
+        "Shipping",
+        "Network",
+        "Pricing",
+        "Track",
+        "Carriers"
+      ],
+      "hero": {
+        "headline": "Pallets moved before lunch",
+        "sub": "Book a truck in under a minute and watch it cross the region in real time.",
+        "primaryCta": "Book a pickup",
+        "secondaryCta": "Track a shipment"
+      },
+      "features": [
+        {
+          "title": "Instant quotes",
+          "body": "Weight, dims and postcode in, firm price out."
+        },
+        {
+          "title": "Live GPS tracking",
+          "body": "Every truck, every turn, shared with your customer."
+        },
+        {
+          "title": "Proof of delivery",
+          "body": "Signed photos land in your inbox the moment freight is dropped."
+        },
+        {
+          "title": "Tail-lift trucks",
+          "body": "Kerbside and loading-dock deliveries handled alike."
+        },
+        {
+          "title": "API booking",
+          "body": "Push orders straight from your warehouse software."
+        },
+        {
+          "title": "Damage cover",
+          "body": "Every load insured to full invoice value."
+        }
+      ],
+      "stats": [
+        {
+          "value": "6 h",
+          "label": "median door-to-door"
+        },
+        {
+          "value": "1,300",
+          "label": "trucks in network"
+        },
+        {
+          "value": "99.2%",
+          "label": "on-time rate"
+        },
+        {
+          "value": "22k",
+          "label": "pallets a month"
+        }
+      ],
+      "testimonials": [
+        {
+          "quote": "We stopped losing afternoons chasing couriers.",
+          "name": "Martin Kovac",
+          "role": "Operations lead, metal fabricator"
+        },
+        {
+          "quote": "Our customers love the tracking link.",
+          "name": "Hana Sato",
+          "role": "Founder, ceramics studio"
+        },
+        {
+          "quote": "The API took one afternoon to wire up.",
+          "name": "Leon Brandt",
+          "role": "Warehouse systems engineer"
+        }
+      ],
+      "pricing": [
+        {
+          "name": "Pay as you go",
+          "price": "$0/mo",
+          "blurb": "Book whenever you need a truck.",
+          "bullets": [
+            "Instant quotes",
+            "Live tracking",
+            "Email support",
+            "Standard cover"
+          ]
+        },
+        {
+          "name": "Business",
+          "price": "$99/mo",
+          "blurb": "Regular shippers.",
+          "bullets": [
+            "12% lower rates",
+            "Scheduled pickups",
+            "API access",
+            "Priority dispatch"
+          ]
+        },
+        {
+          "name": "Enterprise",
+          "price": "Custom",
+          "blurb": "Dedicated fleet capacity.",
+          "bullets": [
+            "Reserved trucks",
+            "Account manager",
+            "Custom SLAs",
+            "Consolidated billing"
+          ]
+        }
+      ],
+      "articles": [
+        {
+          "title": "How we cut empty miles by a third",
+          "excerpt": "Route pooling across shippers.",
+          "tag": "Engineering"
+        },
+        {
+          "title": "Packing a pallet that survives",
+          "excerpt": "Stretch wrap, corner boards and weight balance.",
+          "tag": "Guides"
+        },
+        {
+          "title": "Meet our drivers",
+          "excerpt": "Three decades on the road between them.",
+          "tag": "People"
+        },
+        {
+          "title": "The real cost of a missed pickup",
+          "excerpt": "Numbers from 400 small factories.",
+          "tag": "Research"
+        },
+        {
+          "title": "New depot opens in the east corridor",
+          "excerpt": "Faster coverage for coastal towns.",
+          "tag": "News"
+        },
+        {
+          "title": "Webhooks for delivery events",
+          "excerpt": "Build your own notifications.",
+          "tag": "Developers"
+        }
+      ],
+      "products": [
+        {
+          "name": "Pallet Wrap Roll",
+          "price": "$22",
+          "note": "500 m, recycled"
+        },
+        {
+          "name": "Corner Boards",
+          "price": "$18",
+          "note": "Pack of 50"
+        },
+        {
+          "name": "Label Printer",
+          "price": "$140",
+          "note": "Thermal, 4x6"
+        },
+        {
+          "name": "Shipping Labels",
+          "price": "$16",
+          "note": "Roll of 500"
+        },
+        {
+          "name": "Pallet Jack Hire",
+          "price": "$35/day",
+          "note": "2.5 t capacity"
+        },
+        {
+          "name": "Load Straps",
+          "price": "$29",
+          "note": "Set of four"
+        }
+      ],
+      "cta": {
+        "headline": "Ship your first pallet today",
+        "sub": "No contract. Quote in seconds.",
+        "button": "Get a quote"
+      },
+      "footer": {
+        "columns": [
+          {
+            "title": "Explore",
+            "links": [
+              "Shipping",
+              "Network",
+              "Pricing",
+              "Track"
+            ]
+          },
+          {
+            "title": "Company",
+            "links": [
+              "About",
+              "Careers",
+              "Press",
+              "Contact"
+            ]
+          },
+          {
+            "title": "Resources",
+            "links": [
+              "Journal",
+              "Help center",
+              "Guides",
+              "Community"
+            ]
+          },
+          {
+            "title": "Legal",
+            "links": [
+              "Privacy",
+              "Terms",
+              "Cookies",
+              "Accessibility"
+            ]
+          }
+        ],
+        "legal": "© 2026 Brightline Freight. All rights reserved."
+      }
+    }
+  },
+  {
+    "slug": "notion",
+    "url": "https://www.notion.com",
+    "group": "rest",
+    "style": "light, illustrated productivity",
+    "brief": {
+      "name": "Kettle & Loom",
+      "pitch": "Weekly community weaving and pottery classes in a converted mill.",
+      "nav": [
+        "Classes",
+        "Studio",
+        "Memberships",
+        "Events",
+        "Gift cards"
+      ],
+      "hero": {
+        "headline": "Make something with your hands this week",
+        "sub": "Beginner-friendly classes in weaving, throwing and glazing, with all materials and tea included.",
+        "primaryCta": "Book a class",
+        "secondaryCta": "Visit the studio"
+      },
+      "features": [
+        {
+          "title": "Small groups",
+          "body": "Never more than eight people per teacher."
+        },
+        {
+          "title": "Open studio hours",
+          "body": "Members drop in to finish projects any evening."
+        },
+        {
+          "title": "Kiln included",
+          "body": "We fire your work and you collect it a week later."
+        },
+        {
+          "title": "All levels",
+          "body": "First-timers sit beside people on their fiftieth pot."
+        },
+        {
+          "title": "Private sessions",
+          "body": "Birthdays, team days and hen parties welcome."
+        },
+        {
+          "title": "Local materials",
+          "body": "Wool from nearby farms, clay from a regional pit."
+        }
+      ],
+      "stats": [
+        {
+          "value": "14",
+          "label": "teachers"
+        },
+        {
+          "value": "9,000",
+          "label": "pieces fired a year"
+        },
+        {
+          "value": "8",
+          "label": "max per class"
+        },
+        {
+          "value": "4.9",
+          "label": "average class rating"
+        }
+      ],
+      "testimonials": [
+        {
+          "quote": "I came for one class and stayed for three years.",
+          "name": "Rosa Kim",
+          "role": "Member"
+        },
+        {
+          "quote": "The calmest two hours of my week.",
+          "name": "Daniel Freer",
+          "role": "Nurse"
+        },
+        {
+          "quote": "Our team day was the best offsite we have done.",
+          "name": "Alicia Gomez",
+          "role": "Office manager"
+        }
+      ],
+      "pricing": [
+        {
+          "name": "Drop-in",
+          "price": "$45",
+          "blurb": "A single class, materials included.",
+          "bullets": [
+            "One 2-hour class",
+            "All materials",
+            "Firing included",
+            "Tea and cake"
+          ]
+        },
+        {
+          "name": "Member",
+          "price": "$120/mo",
+          "blurb": "For regular makers.",
+          "bullets": [
+            "Four classes monthly",
+            "Open studio access",
+            "Shelf storage",
+            "Member discounts"
+          ]
+        },
+        {
+          "name": "Studio Pass",
+          "price": "$220/mo",
+          "blurb": "Unlimited making.",
+          "bullets": [
+            "Unlimited classes",
+            "24/7 key access",
+            "Personal wheel",
+            "Guest passes"
+          ]
+        }
+      ],
+      "articles": [
+        {
+          "title": "Centering clay: why it feels impossible",
+          "excerpt": "And the moment it suddenly clicks.",
+          "tag": "Technique"
+        },
+        {
+          "title": "Natural dyes from the garden",
+          "excerpt": "Onion skins, avocado stones and marigold.",
+          "tag": "Weaving"
+        },
+        {
+          "title": "The kiln schedule explained",
+          "excerpt": "Bisque, glaze and why you wait a week.",
+          "tag": "Studio"
+        },
+        {
+          "title": "Member makers: Joan, 74",
+          "excerpt": "She started at 70 and now sells at markets.",
+          "tag": "Community"
+        },
+        {
+          "title": "Winter workshop lineup",
+          "excerpt": "Six new weekend intensives.",
+          "tag": "Events"
+        },
+        {
+          "title": "Caring for handmade mugs",
+          "excerpt": "Dishwashers, microwaves and crazing.",
+          "tag": "Care"
+        }
+      ],
+      "products": [
+        {
+          "name": "Handwoven Table Runner",
+          "price": "$58",
+          "note": "Undyed wool"
+        },
+        {
+          "name": "Stoneware Mug",
+          "price": "$28",
+          "note": "Speckled glaze"
+        },
+        {
+          "name": "Beginner Loom Kit",
+          "price": "$75",
+          "note": "Frame loom and yarn"
+        },
+        {
+          "name": "Gift Card",
+          "price": "$45",
+          "note": "One class"
+        },
+        {
+          "name": "Pottery Tool Set",
+          "price": "$24",
+          "note": "Eight essentials"
+        },
+        {
+          "name": "Studio Apron",
+          "price": "$32",
+          "note": "Heavy canvas"
+        }
+      ],
+      "cta": {
+        "headline": "Find a class that fits your week",
+        "sub": "Evenings, weekends and lunchtimes available.",
+        "button": "See timetable"
+      },
+      "footer": {
+        "columns": [
+          {
+            "title": "Explore",
+            "links": [
+              "Classes",
+              "Studio",
+              "Memberships",
+              "Events"
+            ]
+          },
+          {
+            "title": "Company",
+            "links": [
+              "About",
+              "Careers",
+              "Press",
+              "Contact"
+            ]
+          },
+          {
+            "title": "Resources",
+            "links": [
+              "Journal",
+              "Help center",
+              "Guides",
+              "Community"
+            ]
+          },
+          {
+            "title": "Legal",
+            "links": [
+              "Privacy",
+              "Terms",
+              "Cookies",
+              "Accessibility"
+            ]
+          }
+        ],
+        "legal": "© 2026 Kettle & Loom. All rights reserved."
+      }
+    }
+  },
+  {
+    "slug": "figma",
+    "url": "https://www.figma.com",
+    "group": "rest",
+    "style": "bold colour blocks, product-led",
+    "brief": {
+      "name": "Orbitwise Planetarium",
+      "pitch": "A city planetarium with immersive dome shows, telescopes and a night-sky school.",
+      "nav": [
+        "Shows",
+        "Visit",
+        "Night school",
+        "Schools",
+        "Members"
+      ],
+      "hero": {
+        "headline": "Sit under every sky in history",
+        "sub": "Full-dome shows, rooftop telescope nights and courses taught by working astronomers.",
+        "primaryCta": "Get tickets",
+        "secondaryCta": "See what's on"
+      },
+      "features": [
+        {
+          "title": "8K dome",
+          "body": "A 22-metre dome projecting the sky with uncanny clarity."
+        },
+        {
+          "title": "Rooftop telescopes",
+          "body": "Look at Saturn's rings yourself on clear Fridays."
+        },
+        {
+          "title": "Night school",
+          "body": "Six-week courses from stargazing basics to astrophotography."
+        },
+        {
+          "title": "School trips",
+          "body": "Curriculum-matched shows for every age group."
+        },
+        {
+          "title": "Relaxed screenings",
+          "body": "Lower volume and lights for sensory-sensitive visitors."
+        },
+        {
+          "title": "Late events",
+          "body": "Music under the stars on the last Saturday of each month."
+        }
+      ],
+      "stats": [
+        {
+          "value": "22 m",
+          "label": "dome diameter"
+        },
+        {
+          "value": "310k",
+          "label": "visitors a year"
+        },
+        {
+          "value": "15",
+          "label": "shows in rotation"
+        },
+        {
+          "value": "40",
+          "label": "clear-sky nights booked"
+        }
+      ],
+      "testimonials": [
+        {
+          "quote": "My daughter cried when she saw Saturn. So did I.",
+          "name": "Owen Price",
+          "role": "Visitor"
+        },
+        {
+          "quote": "The best school trip we run all year.",
+          "name": "Ms. Farah Idris",
+          "role": "Science teacher"
+        },
+        {
+          "quote": "The astrophotography course got me hooked.",
+          "name": "Ben Hollis",
+          "role": "Night school graduate"
+        }
+      ],
+      "pricing": [
+        {
+          "name": "Single visit",
+          "price": "$16",
+          "blurb": "One dome show.",
+          "bullets": [
+            "Any show",
+            "Exhibit hall",
+            "Free audio guide",
+            "Cafe discount"
+          ]
+        },
+        {
+          "name": "Member",
+          "price": "$65/yr",
+          "blurb": "Unlimited shows for one.",
+          "bullets": [
+            "Unlimited dome shows",
+            "Rooftop nights",
+            "Member previews",
+            "Guest discounts"
+          ]
+        },
+        {
+          "name": "Family",
+          "price": "$140/yr",
+          "blurb": "Two adults, up to four kids.",
+          "bullets": [
+            "Everything in Member",
+            "Birthday party discount",
+            "Kids' sky club",
+            "Free parking"
+          ]
+        }
+      ],
+      "articles": [
+        {
+          "title": "This month's night sky",
+          "excerpt": "Planets, meteor showers and what to look for.",
+          "tag": "Sky guide"
+        },
+        {
+          "title": "How we built the new dome",
+          "excerpt": "Laser projectors and 30 tonnes of steel.",
+          "tag": "Behind the scenes"
+        },
+        {
+          "title": "A beginner's guide to binoculars",
+          "excerpt": "You do not need a telescope to start.",
+          "tag": "Guides"
+        },
+        {
+          "title": "Eclipse road trip planner",
+          "excerpt": "Where to be for next year's totality.",
+          "tag": "Events"
+        },
+        {
+          "title": "Ask an astronomer",
+          "excerpt": "Your questions about black holes, answered.",
+          "tag": "Q&A"
+        },
+        {
+          "title": "New show: Oceans of Europa",
+          "excerpt": "Diving into an alien sea.",
+          "tag": "Shows"
+        }
+      ],
+      "products": [
+        {
+          "name": "Star Atlas",
+          "price": "$34",
+          "note": "Hardback, 120 charts"
+        },
+        {
+          "name": "Kids' Rocket Kit",
+          "price": "$22",
+          "note": "Build and launch"
+        },
+        {
+          "name": "Moon Lamp",
+          "price": "$45",
+          "note": "3D printed, dimmable"
+        },
+        {
+          "name": "Red Torch",
+          "price": "$12",
+          "note": "Preserves night vision"
+        },
+        {
+          "name": "Planisphere",
+          "price": "$18",
+          "note": "Rotating sky map"
+        },
+        {
+          "name": "Galaxy Tote",
+          "price": "$20",
+          "note": "Organic cotton"
+        }
+      ],
+      "cta": {
+        "headline": "Book your seat under the stars",
+        "sub": "Shows every hour from 10am.",
+        "button": "Get tickets"
+      },
+      "footer": {
+        "columns": [
+          {
+            "title": "Explore",
+            "links": [
+              "Shows",
+              "Visit",
+              "Night school",
+              "Schools"
+            ]
+          },
+          {
+            "title": "Company",
+            "links": [
+              "About",
+              "Careers",
+              "Press",
+              "Contact"
+            ]
+          },
+          {
+            "title": "Resources",
+            "links": [
+              "Journal",
+              "Help center",
+              "Guides",
+              "Community"
+            ]
+          },
+          {
+            "title": "Legal",
+            "links": [
+              "Privacy",
+              "Terms",
+              "Cookies",
+              "Accessibility"
+            ]
+          }
+        ],
+        "legal": "© 2026 Orbitwise Planetarium. All rights reserved."
+      }
+    }
+  },
+  {
+    "slug": "github",
+    "url": "https://github.com",
+    "group": "rest",
+    "style": "dark developer, dense",
+    "brief": {
+      "name": "Cinderpeak Fire Safety",
+      "pitch": "Fire risk assessments, alarm servicing and training for small businesses.",
+      "nav": [
+        "Assessments",
+        "Alarms",
+        "Training",
+        "Compliance",
+        "Contact"
+      ],
+      "hero": {
+        "headline": "Stay compliant without the paperwork panic",
+        "sub": "Certified assessors, scheduled servicing and staff training, all tracked in one place.",
+        "primaryCta": "Book an assessment",
+        "secondaryCta": "Download checklist"
+      },
+      "features": [
+        {
+          "title": "Certified assessors",
+          "body": "Every visit carried out by an accredited fire engineer."
+        },
+        {
+          "title": "Service reminders",
+          "body": "Extinguishers and alarms tested before they are due."
+        },
+        {
+          "title": "Digital logbook",
+          "body": "All certificates stored and shareable with insurers."
+        },
+        {
+          "title": "Staff training",
+          "body": "Fire warden courses on site or online."
+        },
+        {
+          "title": "Evacuation plans",
+          "body": "Clear floor plans printed and posted."
+        },
+        {
+          "title": "Out-of-hours callouts",
+          "body": "Faulty alarm at midnight? We answer."
+        }
+      ],
+      "stats": [
+        {
+          "value": "7,800",
+          "label": "sites protected"
+        },
+        {
+          "value": "0",
+          "label": "failed inspections last year"
+        },
+        {
+          "value": "24 h",
+          "label": "report turnaround"
+        },
+        {
+          "value": "160",
+          "label": "engineers"
+        }
+      ],
+      "testimonials": [
+        {
+          "quote": "Our insurer was impressed by the logbook.",
+          "name": "Sunita Rao",
+          "role": "Restaurant owner"
+        },
+        {
+          "quote": "Training was practical, not a slideshow.",
+          "name": "Callum Reid",
+          "role": "Warehouse supervisor"
+        },
+        {
+          "quote": "They remind us before anything lapses.",
+          "name": "Fatima Noor",
+          "role": "Practice manager"
+        }
+      ],
+      "pricing": [
+        {
+          "name": "Essentials",
+          "price": "$39/mo",
+          "blurb": "Small shops and offices.",
+          "bullets": [
+            "Annual risk assessment",
+            "Extinguisher service",
+            "Digital logbook",
+            "Phone support"
+          ]
+        },
+        {
+          "name": "Business",
+          "price": "$99/mo",
+          "blurb": "Multi-room premises.",
+          "bullets": [
+            "Alarm servicing",
+            "Emergency lighting tests",
+            "Warden training",
+            "Priority callouts"
+          ]
+        },
+        {
+          "name": "Multi-site",
+          "price": "Custom",
+          "blurb": "Chains and estates.",
+          "bullets": [
+            "Portfolio dashboard",
+            "Dedicated engineer",
+            "Audit support",
+            "Bulk pricing"
+          ]
+        }
+      ],
+      "articles": [
+        {
+          "title": "What a fire risk assessment really checks",
+          "excerpt": "A walk through the report.",
+          "tag": "Guides"
+        },
+        {
+          "title": "Extinguisher colours explained",
+          "excerpt": "Water, foam, CO2 and powder.",
+          "tag": "Basics"
+        },
+        {
+          "title": "Lithium battery storage risks",
+          "excerpt": "E-bikes and power tools in the workplace.",
+          "tag": "Risks"
+        },
+        {
+          "title": "Running a fire drill people take seriously",
+          "excerpt": "Make it quick and useful.",
+          "tag": "Training"
+        },
+        {
+          "title": "New regulations this year",
+          "excerpt": "What changes for small landlords.",
+          "tag": "Compliance"
+        },
+        {
+          "title": "Inside an alarm service visit",
+          "excerpt": "What our engineers test.",
+          "tag": "Behind the scenes"
+        }
+      ],
+      "products": [
+        {
+          "name": "Foam Extinguisher 6L",
+          "price": "$69",
+          "note": "Class A and B"
+        },
+        {
+          "name": "CO2 Extinguisher 2kg",
+          "price": "$75",
+          "note": "For electrical fires"
+        },
+        {
+          "name": "Fire Blanket",
+          "price": "$24",
+          "note": "Kitchen-ready"
+        },
+        {
+          "name": "Smoke Alarm",
+          "price": "$32",
+          "note": "10-year sealed battery"
+        },
+        {
+          "name": "Fire Door Signs",
+          "price": "$15",
+          "note": "Pack of ten"
+        },
+        {
+          "name": "Warden Hi-Vis Vest",
+          "price": "$12",
+          "note": "Reflective"
+        }
+      ],
+      "cta": {
+        "headline": "Book your assessment this week",
+        "sub": "Report within 24 hours.",
+        "button": "Get started"
+      },
+      "footer": {
+        "columns": [
+          {
+            "title": "Explore",
+            "links": [
+              "Assessments",
+              "Alarms",
+              "Training",
+              "Compliance"
+            ]
+          },
+          {
+            "title": "Company",
+            "links": [
+              "About",
+              "Careers",
+              "Press",
+              "Contact"
+            ]
+          },
+          {
+            "title": "Resources",
+            "links": [
+              "Journal",
+              "Help center",
+              "Guides",
+              "Community"
+            ]
+          },
+          {
+            "title": "Legal",
+            "links": [
+              "Privacy",
+              "Terms",
+              "Cookies",
+              "Accessibility"
+            ]
+          }
+        ],
+        "legal": "© 2026 Cinderpeak Fire Safety. All rights reserved."
+      }
+    }
+  },
+  {
+    "slug": "apple",
+    "url": "https://www.apple.com",
+    "group": "rest",
+    "style": "premium product, large imagery",
+    "brief": {
+      "name": "Halcyon Cycles",
+      "pitch": "Handbuilt steel touring bicycles made to measure in a two-person workshop.",
+      "nav": [
+        "Bikes",
+        "Fitting",
+        "Workshop",
+        "Journal",
+        "Order"
+      ],
+      "hero": {
+        "headline": "Built for the long way round",
+        "sub": "Lugged steel frames brazed to your measurements and finished for decades of riding.",
+        "primaryCta": "Start your fitting",
+        "secondaryCta": "See the bikes"
+      },
+      "features": [
+        {
+          "title": "Made to measure",
+          "body": "A full body fitting before a single tube is cut."
+        },
+        {
+          "title": "Lugged steel",
+          "body": "Reynolds-grade tubing joined with silver brazing."
+        },
+        {
+          "title": "Touring geometry",
+          "body": "Stable under load, comfortable all day."
+        },
+        {
+          "title": "Hand-painted",
+          "body": "Custom colours and pinstriping by hand."
+        },
+        {
+          "title": "Lifetime frame warranty",
+          "body": "Any frame defect, any time, fixed free."
+        },
+        {
+          "title": "Annual tune-ups",
+          "body": "First five years of servicing included."
+        }
+      ],
+      "stats": [
+        {
+          "value": "2",
+          "label": "builders"
+        },
+        {
+          "value": "140",
+          "label": "frames a year"
+        },
+        {
+          "value": "9 wk",
+          "label": "build time"
+        },
+        {
+          "value": "30+",
+          "label": "years of experience"
+        }
+      ],
+      "testimonials": [
+        {
+          "quote": "Rode it across three countries without a single ache.",
+          "name": "Elena Moretti",
+          "role": "Tourer"
+        },
+        {
+          "quote": "The fitting alone was worth the trip.",
+          "name": "James Oduya",
+          "role": "Commuter"
+        },
+        {
+          "quote": "A bike I will leave to my children.",
+          "name": "Ingrid Lund",
+          "role": "Randonneur"
+        }
+      ],
+      "pricing": [
+        {
+          "name": "Frameset",
+          "price": "$2,400",
+          "blurb": "Frame and fork, your build.",
+          "bullets": [
+            "Custom fitting",
+            "Steel frame and fork",
+            "Paint in one colour",
+            "Headset fitted"
+          ]
+        },
+        {
+          "name": "Complete",
+          "price": "$4,200",
+          "blurb": "Ready to ride.",
+          "bullets": [
+            "Everything in Frameset",
+            "Hand-built wheels",
+            "Mid-range groupset",
+            "Racks and mudguards"
+          ]
+        },
+        {
+          "name": "Grand Tour",
+          "price": "$6,800",
+          "blurb": "Our finest build.",
+          "bullets": [
+            "Premium groupset",
+            "Dynamo lighting",
+            "Leather saddle",
+            "Two-tone paint"
+          ]
+        }
+      ],
+      "articles": [
+        {
+          "title": "Why steel still makes sense",
+          "excerpt": "Comfort, repairability and longevity.",
+          "tag": "Craft"
+        },
+        {
+          "title": "A day in the workshop",
+          "excerpt": "Brazing, filing and a lot of coffee.",
+          "tag": "Behind the scenes"
+        },
+        {
+          "title": "Packing for a month on the road",
+          "excerpt": "Our customers' lightest kits.",
+          "tag": "Touring"
+        },
+        {
+          "title": "Choosing a saddle",
+          "excerpt": "Leather, synthetic and sit-bone width.",
+          "tag": "Fitting"
+        },
+        {
+          "title": "Ride report: the coastal loop",
+          "excerpt": "1,200 km in two weeks.",
+          "tag": "Stories"
+        },
+        {
+          "title": "Paint colours for this season",
+          "excerpt": "Moss, rust and harbour blue.",
+          "tag": "News"
+        }
+      ],
+      "products": [
+        {
+          "name": "Rear Rack",
+          "price": "$180",
+          "note": "Stainless steel"
+        },
+        {
+          "name": "Leather Saddle",
+          "price": "$160",
+          "note": "Hand-stitched"
+        },
+        {
+          "name": "Dynamo Light Set",
+          "price": "$240",
+          "note": "Front and rear"
+        },
+        {
+          "name": "Canvas Panniers",
+          "price": "$210",
+          "note": "Pair, waxed"
+        },
+        {
+          "name": "Bell",
+          "price": "$28",
+          "note": "Brass"
+        },
+        {
+          "name": "Workshop Cap",
+          "price": "$24",
+          "note": "Cotton"
+        }
+      ],
+      "cta": {
+        "headline": "Your bike, measured for you",
+        "sub": "Fittings available on weekdays.",
+        "button": "Book a fitting"
+      },
+      "footer": {
+        "columns": [
+          {
+            "title": "Explore",
+            "links": [
+              "Bikes",
+              "Fitting",
+              "Workshop",
+              "Journal"
+            ]
+          },
+          {
+            "title": "Company",
+            "links": [
+              "About",
+              "Careers",
+              "Press",
+              "Contact"
+            ]
+          },
+          {
+            "title": "Resources",
+            "links": [
+              "Journal",
+              "Help center",
+              "Guides",
+              "Community"
+            ]
+          },
+          {
+            "title": "Legal",
+            "links": [
+              "Privacy",
+              "Terms",
+              "Cookies",
+              "Accessibility"
+            ]
+          }
+        ],
+        "legal": "© 2026 Halcyon Cycles. All rights reserved."
+      }
+    }
+  },
+  {
+    "slug": "airbnb",
+    "url": "https://www.airbnb.com",
+    "group": "rest",
+    "style": "light marketplace, rounded cards",
+    "brief": {
+      "name": "Tutorhaus",
+      "pitch": "A marketplace matching students with vetted local tutors for in-person lessons.",
+      "nav": [
+        "Find a tutor",
+        "Subjects",
+        "Become a tutor",
+        "How it works",
+        "Help"
+      ],
+      "hero": {
+        "headline": "The right tutor, around the corner",
+        "sub": "Search by subject, level and neighbourhood, then book a first lesson with a trusted local teacher.",
+        "primaryCta": "Find a tutor",
+        "secondaryCta": "Teach with us"
+      },
+      "features": [
+        {
+          "title": "Background-checked",
+          "body": "Every tutor verified and interviewed."
+        },
+        {
+          "title": "Free first meeting",
+          "body": "Fifteen minutes to see if it clicks."
+        },
+        {
+          "title": "Flexible booking",
+          "body": "Reschedule up to 24 hours before."
+        },
+        {
+          "title": "Progress notes",
+          "body": "Tutors share a short summary after each lesson."
+        },
+        {
+          "title": "Every subject",
+          "body": "From GCSE maths to jazz piano."
+        },
+        {
+          "title": "Secure payments",
+          "body": "Pay after each lesson through the app."
+        }
+      ],
+      "stats": [
+        {
+          "value": "18k",
+          "label": "tutors"
+        },
+        {
+          "value": "240",
+          "label": "subjects"
+        },
+        {
+          "value": "4.8",
+          "label": "average rating"
+        },
+        {
+          "value": "1.2M",
+          "label": "lessons booked"
+        }
+      ],
+      "testimonials": [
+        {
+          "quote": "Found a chemistry tutor two streets away.",
+          "name": "Nadia Hussein",
+          "role": "Parent"
+        },
+        {
+          "quote": "Tutoring here pays my rent.",
+          "name": "Theo Marsh",
+          "role": "Physics graduate"
+        },
+        {
+          "quote": "My grades went up two bands.",
+          "name": "Jaden Cole",
+          "role": "Student"
+        }
+      ],
+      "pricing": [
+        {
+          "name": "Pay per lesson",
+          "price": "from $25",
+          "blurb": "Book as you go.",
+          "bullets": [
+            "No subscription",
+            "Free first meeting",
+            "Progress notes",
+            "Secure payment"
+          ]
+        },
+        {
+          "name": "Bundle",
+          "price": "$220",
+          "blurb": "10 lessons, save 12%.",
+          "bullets": [
+            "Same tutor guaranteed",
+            "Priority scheduling",
+            "Exam prep plan",
+            "Parent updates"
+          ]
+        },
+        {
+          "name": "Family",
+          "price": "$39/mo",
+          "blurb": "For multiple children.",
+          "bullets": [
+            "Up to 4 learners",
+            "5% off every lesson",
+            "Shared calendar",
+            "Family support line"
+          ]
+        }
+      ],
+      "articles": [
+        {
+          "title": "How to choose a maths tutor",
+          "excerpt": "Questions to ask in the first meeting.",
+          "tag": "Guides"
+        },
+        {
+          "title": "Exam season survival kit",
+          "excerpt": "Sleep, timetables and past papers.",
+          "tag": "Study"
+        },
+        {
+          "title": "Tutor spotlight: Grace, violin",
+          "excerpt": "Teaching for 20 years.",
+          "tag": "Community"
+        },
+        {
+          "title": "Online vs in-person lessons",
+          "excerpt": "What the research says.",
+          "tag": "Research"
+        },
+        {
+          "title": "Becoming a tutor: first steps",
+          "excerpt": "Profile tips that get bookings.",
+          "tag": "Tutors"
+        },
+        {
+          "title": "Learning languages as an adult",
+          "excerpt": "It is never too late.",
+          "tag": "Learning"
+        }
+      ],
+      "products": [
+        {
+          "name": "Gift Lesson",
+          "price": "$35",
+          "note": "One hour, any subject"
+        },
+        {
+          "name": "Exam Prep Pack",
+          "price": "$180",
+          "note": "Six focused sessions"
+        },
+        {
+          "name": "Study Planner",
+          "price": "$14",
+          "note": "Printed, undated"
+        },
+        {
+          "name": "Flashcard Set",
+          "price": "$9",
+          "note": "500 blank cards"
+        },
+        {
+          "name": "Music Starter Bundle",
+          "price": "$140",
+          "note": "Four lessons"
+        },
+        {
+          "name": "Language Trial",
+          "price": "$30",
+          "note": "Two short sessions"
+        }
+      ],
+      "cta": {
+        "headline": "Book a free first meeting",
+        "sub": "Hundreds of tutors near you.",
+        "button": "Search tutors"
+      },
+      "footer": {
+        "columns": [
+          {
+            "title": "Explore",
+            "links": [
+              "Find a tutor",
+              "Subjects",
+              "Become a tutor",
+              "How it works"
+            ]
+          },
+          {
+            "title": "Company",
+            "links": [
+              "About",
+              "Careers",
+              "Press",
+              "Contact"
+            ]
+          },
+          {
+            "title": "Resources",
+            "links": [
+              "Journal",
+              "Help center",
+              "Guides",
+              "Community"
+            ]
+          },
+          {
+            "title": "Legal",
+            "links": [
+              "Privacy",
+              "Terms",
+              "Cookies",
+              "Accessibility"
+            ]
+          }
+        ],
+        "legal": "© 2026 Tutorhaus. All rights reserved."
+      }
+    }
+  },
+  {
+    "slug": "spotify",
+    "url": "https://www.spotify.com",
+    "group": "rest",
+    "style": "dark, vivid green accent",
+    "brief": {
+      "name": "Ferncastle Climbing Gym",
+      "pitch": "A bouldering and rope climbing centre with youth teams and yoga.",
+      "nav": [
+        "Climb",
+        "Classes",
+        "Youth",
+        "Memberships",
+        "Cafe"
+      ],
+      "hero": {
+        "headline": "New problems every Monday",
+        "sub": "Twelve-metre walls, a huge bouldering cave and coaching for every level.",
+        "primaryCta": "Buy a day pass",
+        "secondaryCta": "Try a taster session"
+      },
+      "features": [
+        {
+          "title": "Weekly resets",
+          "body": "Fresh boulder problems every week."
+        },
+        {
+          "title": "Auto-belays",
+          "body": "Climb ropes solo safely."
+        },
+        {
+          "title": "Youth squads",
+          "body": "Competitive and social teams for ages 6 to 17."
+        },
+        {
+          "title": "Training area",
+          "body": "Hangboards, campus board and weights."
+        },
+        {
+          "title": "Yoga studio",
+          "body": "Mobility and recovery classes daily."
+        },
+        {
+          "title": "Cafe and co-work",
+          "body": "Good coffee and fast wifi between sessions."
+        }
+      ],
+      "stats": [
+        {
+          "value": "400",
+          "label": "boulder problems"
+        },
+        {
+          "value": "12 m",
+          "label": "lead walls"
+        },
+        {
+          "value": "2,800",
+          "label": "members"
+        },
+        {
+          "value": "7 days",
+          "label": "open week-round"
+        }
+      ],
+      "testimonials": [
+        {
+          "quote": "The setting is genuinely creative.",
+          "name": "Mia Novak",
+          "role": "Member"
+        },
+        {
+          "quote": "My kids live here now.",
+          "name": "Patrick Oyelaran",
+          "role": "Parent"
+        },
+        {
+          "quote": "Best taster session I have done.",
+          "name": "Ruby Ellis",
+          "role": "Beginner"
+        }
+      ],
+      "pricing": [
+        {
+          "name": "Day Pass",
+          "price": "$18",
+          "blurb": "One visit.",
+          "bullets": [
+            "All walls",
+            "Shoe hire extra",
+            "Yoga drop-in add-on",
+            "Cafe access"
+          ]
+        },
+        {
+          "name": "Monthly",
+          "price": "$65/mo",
+          "blurb": "Climb whenever.",
+          "bullets": [
+            "Unlimited entry",
+            "Yoga classes",
+            "Training area",
+            "Guest pass monthly"
+          ]
+        },
+        {
+          "name": "Annual",
+          "price": "$650/yr",
+          "blurb": "Two months free.",
+          "bullets": [
+            "Everything in Monthly",
+            "Free shoe hire",
+            "Gear discounts",
+            "Member events"
+          ]
+        }
+      ],
+      "articles": [
+        {
+          "title": "Your first bouldering session",
+          "excerpt": "What to wear and how to fall.",
+          "tag": "Beginners"
+        },
+        {
+          "title": "Finger strength without injury",
+          "excerpt": "A safe hangboard plan.",
+          "tag": "Training"
+        },
+        {
+          "title": "Meet the setters",
+          "excerpt": "How a problem goes from idea to wall.",
+          "tag": "Behind the scenes"
+        },
+        {
+          "title": "Youth team results",
+          "excerpt": "Podiums at the regional league.",
+          "tag": "Youth"
+        },
+        {
+          "title": "Climbing shoe sizing",
+          "excerpt": "Tight but not torture.",
+          "tag": "Gear"
+        },
+        {
+          "title": "Evening yoga for climbers",
+          "excerpt": "Hips, shoulders and forearms.",
+          "tag": "Wellness"
+        }
+      ],
+      "products": [
+        {
+          "name": "Chalk Bag",
+          "price": "$22",
+          "note": "Brush holder included"
+        },
+        {
+          "name": "Liquid Chalk",
+          "price": "$12",
+          "note": "200 ml"
+        },
+        {
+          "name": "Climbing Shoes",
+          "price": "$110",
+          "note": "Neutral fit"
+        },
+        {
+          "name": "Brush Set",
+          "price": "$10",
+          "note": "Boar bristle"
+        },
+        {
+          "name": "Gym Tee",
+          "price": "$26",
+          "note": "Organic cotton"
+        },
+        {
+          "name": "Gift Pass",
+          "price": "$18",
+          "note": "One day climb"
+        }
+      ],
+      "cta": {
+        "headline": "Come climb with us",
+        "sub": "First visit includes a free induction.",
+        "button": "Plan your visit"
+      },
+      "footer": {
+        "columns": [
+          {
+            "title": "Explore",
+            "links": [
+              "Climb",
+              "Classes",
+              "Youth",
+              "Memberships"
+            ]
+          },
+          {
+            "title": "Company",
+            "links": [
+              "About",
+              "Careers",
+              "Press",
+              "Contact"
+            ]
+          },
+          {
+            "title": "Resources",
+            "links": [
+              "Journal",
+              "Help center",
+              "Guides",
+              "Community"
+            ]
+          },
+          {
+            "title": "Legal",
+            "links": [
+              "Privacy",
+              "Terms",
+              "Cookies",
+              "Accessibility"
+            ]
+          }
+        ],
+        "legal": "© 2026 Ferncastle Climbing Gym. All rights reserved."
+      }
+    }
+  },
+  {
+    "slug": "shopify",
+    "url": "https://www.shopify.com",
+    "group": "rest",
+    "style": "commerce SaaS, green, illustration",
+    "brief": {
+      "name": "Mapleworth Dental",
+      "pitch": "Calm, modern dental clinics with evening appointments and clear prices.",
+      "nav": [
+        "Treatments",
+        "Prices",
+        "Locations",
+        "Our dentists",
+        "Book"
+      ],
+      "hero": {
+        "headline": "Dentistry that does not make you nervous",
+        "sub": "Evening and weekend appointments, clear fees and dentists who explain everything first.",
+        "primaryCta": "Book a check-up",
+        "secondaryCta": "See prices"
+      },
+      "features": [
+        {
+          "title": "Evening hours",
+          "body": "Open until 8pm on weekdays."
+        },
+        {
+          "title": "Fixed prices",
+          "body": "Every treatment listed with its price."
+        },
+        {
+          "title": "Gentle care",
+          "body": "Sedation options for anxious patients."
+        },
+        {
+          "title": "Same-day emergencies",
+          "body": "Toothache? We keep slots free daily."
+        },
+        {
+          "title": "Hygienist visits",
+          "body": "Cleanings that actually feel good."
+        },
+        {
+          "title": "Kids' dentistry",
+          "body": "Fun, short visits for young patients."
+        }
+      ],
+      "stats": [
+        {
+          "value": "9",
+          "label": "clinics"
+        },
+        {
+          "value": "64k",
+          "label": "patients"
+        },
+        {
+          "value": "4.9",
+          "label": "patient rating"
+        },
+        {
+          "value": "15 min",
+          "label": "average wait"
+        }
+      ],
+      "testimonials": [
+        {
+          "quote": "First time I have not dreaded the dentist.",
+          "name": "Aisha Bello",
+          "role": "Patient"
+        },
+        {
+          "quote": "Clear pricing, no surprises at the desk.",
+          "name": "Mark Ellison",
+          "role": "Patient"
+        },
+        {
+          "quote": "My kids ask when they can go back.",
+          "name": "Grace Liu",
+          "role": "Parent"
+        }
+      ],
+      "pricing": [
+        {
+          "name": "Pay as you go",
+          "price": "$75",
+          "blurb": "Check-up visit.",
+          "bullets": [
+            "Full exam",
+            "X-rays as needed",
+            "Treatment plan",
+            "No membership"
+          ]
+        },
+        {
+          "name": "Care Plan",
+          "price": "$18/mo",
+          "blurb": "Routine care covered.",
+          "bullets": [
+            "Two check-ups yearly",
+            "Two hygienist visits",
+            "10% off treatments",
+            "Emergency cover"
+          ]
+        },
+        {
+          "name": "Family Plan",
+          "price": "$49/mo",
+          "blurb": "Up to five people.",
+          "bullets": [
+            "Everything in Care Plan",
+            "Kids' sealants",
+            "Shared booking",
+            "Priority emergencies"
+          ]
+        }
+      ],
+      "articles": [
+        {
+          "title": "How often should you really floss?",
+          "excerpt": "The honest answer.",
+          "tag": "Oral health"
+        },
+        {
+          "title": "Whitening options compared",
+          "excerpt": "Trays, strips and in-chair.",
+          "tag": "Treatments"
+        },
+        {
+          "title": "Helping kids love the dentist",
+          "excerpt": "Small habits that help.",
+          "tag": "Family"
+        },
+        {
+          "title": "What happens in a root canal",
+          "excerpt": "Less scary than it sounds.",
+          "tag": "Treatments"
+        },
+        {
+          "title": "Our new clinic opens",
+          "excerpt": "Now seeing patients on the high street.",
+          "tag": "News"
+        },
+        {
+          "title": "Electric vs manual brushes",
+          "excerpt": "What dentists use themselves.",
+          "tag": "Products"
+        }
+      ],
+      "products": [
+        {
+          "name": "Electric Toothbrush",
+          "price": "$65",
+          "note": "Two-minute timer"
+        },
+        {
+          "name": "Whitening Kit",
+          "price": "$140",
+          "note": "Custom trays"
+        },
+        {
+          "name": "Floss Picks",
+          "price": "$6",
+          "note": "Pack of 90"
+        },
+        {
+          "name": "Kids' Brush Set",
+          "price": "$12",
+          "note": "Soft bristles"
+        },
+        {
+          "name": "Night Guard",
+          "price": "$190",
+          "note": "Custom-fitted"
+        },
+        {
+          "name": "Mouthwash",
+          "price": "$8",
+          "note": "Alcohol-free"
+        }
+      ],
+      "cta": {
+        "headline": "Book your next check-up",
+        "sub": "Online booking in under two minutes.",
+        "button": "Book now"
+      },
+      "footer": {
+        "columns": [
+          {
+            "title": "Explore",
+            "links": [
+              "Treatments",
+              "Prices",
+              "Locations",
+              "Our dentists"
+            ]
+          },
+          {
+            "title": "Company",
+            "links": [
+              "About",
+              "Careers",
+              "Press",
+              "Contact"
+            ]
+          },
+          {
+            "title": "Resources",
+            "links": [
+              "Journal",
+              "Help center",
+              "Guides",
+              "Community"
+            ]
+          },
+          {
+            "title": "Legal",
+            "links": [
+              "Privacy",
+              "Terms",
+              "Cookies",
+              "Accessibility"
+            ]
+          }
+        ],
+        "legal": "© 2026 Mapleworth Dental. All rights reserved."
+      }
+    }
+  },
+  {
+    "slug": "dropbox",
+    "url": "https://www.dropbox.com",
+    "group": "rest",
+    "style": "clean, blue accent, product shots",
+    "brief": {
+      "name": "Pebblebrook Kennels",
+      "pitch": "Boutique dog boarding and daycare with live webcams and countryside walks.",
+      "nav": [
+        "Daycare",
+        "Boarding",
+        "Grooming",
+        "Webcams",
+        "Book"
+      ],
+      "hero": {
+        "headline": "A holiday for your dog too",
+        "sub": "Spacious suites, daily field walks and webcams so you can check in from anywhere.",
+        "primaryCta": "Book a stay",
+        "secondaryCta": "Watch the webcams"
+      },
+      "features": [
+        {
+          "title": "Live webcams",
+          "body": "See your dog play in real time."
+        },
+        {
+          "title": "Countryside walks",
+          "body": "Two long walks a day across private fields."
+        },
+        {
+          "title": "Small groups",
+          "body": "Playgroups matched by size and temperament."
+        },
+        {
+          "title": "Vet on call",
+          "body": "A local vet partner available every day."
+        },
+        {
+          "title": "Grooming spa",
+          "body": "A bath and tidy before going home."
+        },
+        {
+          "title": "Pick-up service",
+          "body": "We collect and drop off within ten miles."
+        }
+      ],
+      "stats": [
+        {
+          "value": "40",
+          "label": "private suites"
+        },
+        {
+          "value": "12 acres",
+          "label": "of fields"
+        },
+        {
+          "value": "2",
+          "label": "walks per day"
+        },
+        {
+          "value": "5,000",
+          "label": "happy stays"
+        }
+      ],
+      "testimonials": [
+        {
+          "quote": "I watched her nap on the webcam all week.",
+          "name": "Hannah Ford",
+          "role": "Owner"
+        },
+        {
+          "quote": "Came home tired and happy.",
+          "name": "Raj Mehta",
+          "role": "Owner"
+        },
+        {
+          "quote": "The only kennels our anxious rescue tolerates.",
+          "name": "Olivia Grant",
+          "role": "Owner"
+        }
+      ],
+      "pricing": [
+        {
+          "name": "Daycare",
+          "price": "$35/day",
+          "blurb": "Play and walks.",
+          "bullets": [
+            "Group play",
+            "One field walk",
+            "Webcam access",
+            "Daily report card"
+          ]
+        },
+        {
+          "name": "Boarding",
+          "price": "$55/night",
+          "blurb": "Overnight stays.",
+          "bullets": [
+            "Private suite",
+            "Two walks daily",
+            "Webcam access",
+            "Bedtime treat"
+          ]
+        },
+        {
+          "name": "Luxury Suite",
+          "price": "$85/night",
+          "blurb": "The VIP treatment.",
+          "bullets": [
+            "Larger suite",
+            "One-to-one walks",
+            "Grooming on departure",
+            "Photo updates"
+          ]
+        }
+      ],
+      "articles": [
+        {
+          "title": "Preparing your dog for its first stay",
+          "excerpt": "Packing list and tips.",
+          "tag": "Guides"
+        },
+        {
+          "title": "Why group play matters",
+          "excerpt": "Socialisation for all ages.",
+          "tag": "Behaviour"
+        },
+        {
+          "title": "Summer heat and dogs",
+          "excerpt": "How we keep them cool.",
+          "tag": "Care"
+        },
+        {
+          "title": "Meet our handlers",
+          "excerpt": "Animal lovers, all of them.",
+          "tag": "Team"
+        },
+        {
+          "title": "Grooming between visits",
+          "excerpt": "Brushing basics.",
+          "tag": "Grooming"
+        },
+        {
+          "title": "New agility field",
+          "excerpt": "Tunnels, ramps and jumps.",
+          "tag": "News"
+        }
+      ],
+      "products": [
+        {
+          "name": "Dog Bed",
+          "price": "$85",
+          "note": "Washable cover"
+        },
+        {
+          "name": "Travel Bowl",
+          "price": "$14",
+          "note": "Collapsible"
+        },
+        {
+          "name": "Natural Shampoo",
+          "price": "$16",
+          "note": "Oatmeal"
+        },
+        {
+          "name": "Rope Toy",
+          "price": "$9",
+          "note": "Organic cotton"
+        },
+        {
+          "name": "Training Treats",
+          "price": "$11",
+          "note": "Salmon"
+        },
+        {
+          "name": "Lead and Collar Set",
+          "price": "$38",
+          "note": "Leather"
+        }
+      ],
+      "cta": {
+        "headline": "Book your dog's next getaway",
+        "sub": "Meet-and-greet visits free.",
+        "button": "Book a visit"
+      },
+      "footer": {
+        "columns": [
+          {
+            "title": "Explore",
+            "links": [
+              "Daycare",
+              "Boarding",
+              "Grooming",
+              "Webcams"
+            ]
+          },
+          {
+            "title": "Company",
+            "links": [
+              "About",
+              "Careers",
+              "Press",
+              "Contact"
+            ]
+          },
+          {
+            "title": "Resources",
+            "links": [
+              "Journal",
+              "Help center",
+              "Guides",
+              "Community"
+            ]
+          },
+          {
+            "title": "Legal",
+            "links": [
+              "Privacy",
+              "Terms",
+              "Cookies",
+              "Accessibility"
+            ]
+          }
+        ],
+        "legal": "© 2026 Pebblebrook Kennels. All rights reserved."
+      }
+    }
+  },
+  {
+    "slug": "mailchimp",
+    "url": "https://mailchimp.com",
+    "group": "rest",
+    "style": "yellow, quirky illustration",
+    "brief": {
+      "name": "Bramblehaus Brewing",
+      "pitch": "A small-batch brewery and taproom known for farmhouse ales and foraged beers.",
+      "nav": [
+        "Beers",
+        "Taproom",
+        "Events",
+        "Club",
+        "Shop"
+      ],
+      "hero": {
+        "headline": "Beer that tastes like somewhere",
+        "sub": "Farmhouse ales brewed with wild yeast and hedgerow ingredients from our valley.",
+        "primaryCta": "Visit the taproom",
+        "secondaryCta": "Join the beer club"
+      },
+      "features": [
+        {
+          "title": "Wild yeast",
+          "body": "Cultured from the orchard behind the brewery."
+        },
+        {
+          "title": "Foraged ingredients",
+          "body": "Elderflower, sloe and nettle in season."
+        },
+        {
+          "title": "Barrel ageing",
+          "body": "Oak barrels for sours and stouts."
+        },
+        {
+          "title": "Taproom food",
+          "body": "Wood-fired pizzas every weekend."
+        },
+        {
+          "title": "Brewery tours",
+          "body": "See the kit and taste from the tank."
+        },
+        {
+          "title": "Low-alcohol range",
+          "body": "Full flavour, under 2.8%."
+        }
+      ],
+      "stats": [
+        {
+          "value": "24",
+          "label": "beers a year"
+        },
+        {
+          "value": "60",
+          "label": "oak barrels"
+        },
+        {
+          "value": "1,900",
+          "label": "club members"
+        },
+        {
+          "value": "6",
+          "label": "awards"
+        }
+      ],
+      "testimonials": [
+        {
+          "quote": "The elderflower saison is unreal.",
+          "name": "Freya Holt",
+          "role": "Taproom regular"
+        },
+        {
+          "quote": "Best brewery tour we have done.",
+          "name": "Sam and Leo",
+          "role": "Visitors"
+        },
+        {
+          "quote": "Club boxes always surprise me.",
+          "name": "Arjun Sethi",
+          "role": "Club member"
+        }
+      ],
+      "pricing": [
+        {
+          "name": "Taster Box",
+          "price": "$29",
+          "blurb": "One-off six beers.",
+          "bullets": [
+            "Six cans",
+            "Tasting notes",
+            "Free glass",
+            "Delivery included"
+          ]
+        },
+        {
+          "name": "Beer Club",
+          "price": "$45/mo",
+          "blurb": "Twelve beers monthly.",
+          "bullets": [
+            "Club-only releases",
+            "Taproom discount",
+            "Members' night",
+            "Free delivery"
+          ]
+        },
+        {
+          "name": "Barrel Society",
+          "price": "$400/yr",
+          "blurb": "For sour lovers.",
+          "bullets": [
+            "Four barrel releases",
+            "Private tastings",
+            "Name on a barrel",
+            "Brewery day"
+          ]
+        }
+      ],
+      "articles": [
+        {
+          "title": "Foraging for the summer saison",
+          "excerpt": "Elderflower season is short.",
+          "tag": "Brewing"
+        },
+        {
+          "title": "What wild yeast does",
+          "excerpt": "Funk, fruit and patience.",
+          "tag": "Science"
+        },
+        {
+          "title": "Taproom summer events",
+          "excerpt": "Live music and pizza.",
+          "tag": "Events"
+        },
+        {
+          "title": "Pairing beer with cheese",
+          "excerpt": "Our cheesemonger's picks.",
+          "tag": "Food"
+        },
+        {
+          "title": "Inside the barrel room",
+          "excerpt": "Two years of waiting.",
+          "tag": "Behind the scenes"
+        },
+        {
+          "title": "Low and no: our new range",
+          "excerpt": "Full flavour, light on alcohol.",
+          "tag": "Beers"
+        }
+      ],
+      "products": [
+        {
+          "name": "Hedgerow Saison",
+          "price": "$5",
+          "note": "5.4%, 440 ml"
+        },
+        {
+          "name": "Orchard Sour",
+          "price": "$7",
+          "note": "6.1%, barrel aged"
+        },
+        {
+          "name": "Nettle Pale",
+          "price": "$4.50",
+          "note": "4.2%, hoppy"
+        },
+        {
+          "name": "Smoked Porter",
+          "price": "$5.50",
+          "note": "6.8%, rich"
+        },
+        {
+          "name": "Taproom Glass",
+          "price": "$8",
+          "note": "Tulip shape"
+        },
+        {
+          "name": "Brewery Hoodie",
+          "price": "$48",
+          "note": "Heavyweight"
+        }
+      ],
+      "cta": {
+        "headline": "Pull up a stool",
+        "sub": "Taproom open Thursday to Sunday.",
+        "button": "Plan a visit"
+      },
+      "footer": {
+        "columns": [
+          {
+            "title": "Explore",
+            "links": [
+              "Beers",
+              "Taproom",
+              "Events",
+              "Club"
+            ]
+          },
+          {
+            "title": "Company",
+            "links": [
+              "About",
+              "Careers",
+              "Press",
+              "Contact"
+            ]
+          },
+          {
+            "title": "Resources",
+            "links": [
+              "Journal",
+              "Help center",
+              "Guides",
+              "Community"
+            ]
+          },
+          {
+            "title": "Legal",
+            "links": [
+              "Privacy",
+              "Terms",
+              "Cookies",
+              "Accessibility"
+            ]
+          }
+        ],
+        "legal": "© 2026 Bramblehaus Brewing. All rights reserved."
+      }
+    }
+  },
+  {
+    "slug": "tailwindcss",
+    "url": "https://tailwindcss.com",
+    "group": "rest",
+    "style": "developer docs, dark/light, code-forward",
+    "brief": {
+      "name": "Northgale Solar",
+      "pitch": "Rooftop solar and battery installs with honest payback estimates.",
+      "nav": [
+        "Solar",
+        "Batteries",
+        "Savings",
+        "Installs",
+        "Quote"
+      ],
+      "hero": {
+        "headline": "Power from your own roof",
+        "sub": "Accurate quotes from satellite surveys, certified installers and monitoring for the life of the system.",
+        "primaryCta": "Get a quote",
+        "secondaryCta": "Estimate savings"
+      },
+      "features": [
+        {
+          "title": "Satellite surveys",
+          "body": "Accurate roof measurement without a visit."
+        },
+        {
+          "title": "Honest payback",
+          "body": "Real tariff data, no inflated forecasts."
+        },
+        {
+          "title": "Battery storage",
+          "body": "Use daytime sun after dark."
+        },
+        {
+          "title": "App monitoring",
+          "body": "See generation, use and savings live."
+        },
+        {
+          "title": "25-year warranty",
+          "body": "Panels and workmanship covered."
+        },
+        {
+          "title": "Finance options",
+          "body": "Spread costs with no deposit."
+        }
+      ],
+      "stats": [
+        {
+          "value": "11k",
+          "label": "homes powered"
+        },
+        {
+          "value": "8.4 yr",
+          "label": "average payback"
+        },
+        {
+          "value": "62 MW",
+          "label": "installed"
+        },
+        {
+          "value": "2 days",
+          "label": "typical install"
+        }
+      ],
+      "testimonials": [
+        {
+          "quote": "The quote was within 2% of the final bill.",
+          "name": "Gareth Ames",
+          "role": "Homeowner"
+        },
+        {
+          "quote": "Our energy bill is almost zero in summer.",
+          "name": "Lina Park",
+          "role": "Homeowner"
+        },
+        {
+          "quote": "Installers were tidy and quick.",
+          "name": "Ruth Greene",
+          "role": "Homeowner"
+        }
+      ],
+      "pricing": [
+        {
+          "name": "Starter",
+          "price": "$5,900",
+          "blurb": "Small roofs.",
+          "bullets": [
+            "8 panels",
+            "Inverter",
+            "App monitoring",
+            "25-year warranty"
+          ]
+        },
+        {
+          "name": "Home",
+          "price": "$8,400",
+          "blurb": "Most households.",
+          "bullets": [
+            "12 panels",
+            "Smart inverter",
+            "Bird protection",
+            "Priority install"
+          ]
+        },
+        {
+          "name": "Home + Battery",
+          "price": "$13,900",
+          "blurb": "Maximum self-use.",
+          "bullets": [
+            "12 panels",
+            "10 kWh battery",
+            "Backup power",
+            "EV charger ready"
+          ]
+        }
+      ],
+      "articles": [
+        {
+          "title": "Is solar worth it in cloudy places?",
+          "excerpt": "Yes, and here is why.",
+          "tag": "Guides"
+        },
+        {
+          "title": "Batteries explained",
+          "excerpt": "Sizing and payback.",
+          "tag": "Batteries"
+        },
+        {
+          "title": "How a satellite survey works",
+          "excerpt": "Measuring roofs from orbit.",
+          "tag": "Technology"
+        },
+        {
+          "title": "Selling power back to the grid",
+          "excerpt": "Export tariffs compared.",
+          "tag": "Savings"
+        },
+        {
+          "title": "Install day timeline",
+          "excerpt": "What happens and when.",
+          "tag": "Installs"
+        },
+        {
+          "title": "Panel cleaning myths",
+          "excerpt": "Rain does most of the work.",
+          "tag": "Care"
+        }
+      ],
+      "products": [
+        {
+          "name": "EV Charger",
+          "price": "$890",
+          "note": "7 kW, smart"
+        },
+        {
+          "name": "Extra Panel",
+          "price": "$260",
+          "note": "420 W"
+        },
+        {
+          "name": "5 kWh Battery Add-on",
+          "price": "$3,200",
+          "note": "Stackable"
+        },
+        {
+          "name": "Bird Mesh Kit",
+          "price": "$190",
+          "note": "Keeps pigeons out"
+        },
+        {
+          "name": "Energy Monitor",
+          "price": "$120",
+          "note": "Whole home"
+        },
+        {
+          "name": "Cleaning Kit",
+          "price": "$45",
+          "note": "Soft brush pole"
+        }
+      ],
+      "cta": {
+        "headline": "See what your roof can do",
+        "sub": "Free quote in two minutes.",
+        "button": "Get my quote"
+      },
+      "footer": {
+        "columns": [
+          {
+            "title": "Explore",
+            "links": [
+              "Solar",
+              "Batteries",
+              "Savings",
+              "Installs"
+            ]
+          },
+          {
+            "title": "Company",
+            "links": [
+              "About",
+              "Careers",
+              "Press",
+              "Contact"
+            ]
+          },
+          {
+            "title": "Resources",
+            "links": [
+              "Journal",
+              "Help center",
+              "Guides",
+              "Community"
+            ]
+          },
+          {
+            "title": "Legal",
+            "links": [
+              "Privacy",
+              "Terms",
+              "Cookies",
+              "Accessibility"
+            ]
+          }
+        ],
+        "legal": "© 2026 Northgale Solar. All rights reserved."
+      }
+    }
+  },
+  {
+    "slug": "raycast",
+    "url": "https://www.raycast.com",
+    "group": "rest",
+    "style": "dark, glossy, keyboard-centric",
+    "brief": {
+      "name": "Saltmarsh Oyster Bar",
+      "pitch": "A waterfront seafood restaurant serving oysters from its own beds.",
+      "nav": [
+        "Menu",
+        "Reservations",
+        "Oyster beds",
+        "Private dining",
+        "Gift cards"
+      ],
+      "hero": {
+        "headline": "From the tide to your table",
+        "sub": "Oysters harvested this morning from our own beds, shucked to order on the quay.",
+        "primaryCta": "Book a table",
+        "secondaryCta": "View menu"
+      },
+      "features": [
+        {
+          "title": "Our own beds",
+          "body": "Native and rock oysters grown in the estuary."
+        },
+        {
+          "title": "Daily catch board",
+          "body": "Whatever the boats bring in."
+        },
+        {
+          "title": "Shucking classes",
+          "body": "Learn the knife on Saturday afternoons."
+        },
+        {
+          "title": "Raw bar",
+          "body": "Crudo, ceviche and cured fish."
+        },
+        {
+          "title": "Natural wines",
+          "body": "A list chosen for seafood."
+        },
+        {
+          "title": "Terrace seating",
+          "body": "Watch the tide come in."
+        }
+      ],
+      "stats": [
+        {
+          "value": "3",
+          "label": "oyster beds"
+        },
+        {
+          "value": "1,400",
+          "label": "oysters shucked daily"
+        },
+        {
+          "value": "4 h",
+          "label": "tide to table"
+        },
+        {
+          "value": "1",
+          "label": "local award"
+        }
+      ],
+      "testimonials": [
+        {
+          "quote": "Best oysters I have had anywhere.",
+          "name": "Clara Deveraux",
+          "role": "Food writer"
+        },
+        {
+          "quote": "The shucking class was hilarious and useful.",
+          "name": "Tom Reilly",
+          "role": "Guest"
+        },
+        {
+          "quote": "A perfect anniversary dinner.",
+          "name": "Maya and Jon",
+          "role": "Guests"
+        }
+      ],
+      "pricing": [
+        {
+          "name": "Raw Bar",
+          "price": "$38",
+          "blurb": "A dozen and a glass.",
+          "bullets": [
+            "12 oysters",
+            "Glass of wine",
+            "Sourdough",
+            "Mignonette trio"
+          ]
+        },
+        {
+          "name": "Tasting Menu",
+          "price": "$85",
+          "blurb": "Six seafood courses.",
+          "bullets": [
+            "Chef's selection",
+            "Oyster flight",
+            "Dessert",
+            "Coffee"
+          ]
+        },
+        {
+          "name": "Shucking Class",
+          "price": "$60",
+          "blurb": "Two-hour workshop.",
+          "bullets": [
+            "Shuck 12 oysters",
+            "Knife to take home",
+            "Glass of fizz",
+            "Certificate"
+          ]
+        }
+      ],
+      "articles": [
+        {
+          "title": "How oysters clean the estuary",
+          "excerpt": "One oyster filters 50 litres a day.",
+          "tag": "Ecology"
+        },
+        {
+          "title": "Native vs rock oysters",
+          "excerpt": "Taste and season compared.",
+          "tag": "Oysters"
+        },
+        {
+          "title": "A morning on the beds",
+          "excerpt": "Harvesting at low tide.",
+          "tag": "Behind the scenes"
+        },
+        {
+          "title": "Wine with oysters",
+          "excerpt": "Muscadet and beyond.",
+          "tag": "Drinks"
+        },
+        {
+          "title": "Opening a shell safely",
+          "excerpt": "Gloves, knives and angles.",
+          "tag": "Guides"
+        },
+        {
+          "title": "Summer menu arrives",
+          "excerpt": "Crab, samphire and sea bass.",
+          "tag": "Menu"
+        }
+      ],
+      "products": [
+        {
+          "name": "Oyster Knife",
+          "price": "$22",
+          "note": "Carbon steel"
+        },
+        {
+          "name": "Shucking Glove",
+          "price": "$15",
+          "note": "Cut-resistant"
+        },
+        {
+          "name": "Gift Card",
+          "price": "$100",
+          "note": "Any meal"
+        },
+        {
+          "name": "Hot Sauce",
+          "price": "$9",
+          "note": "House chilli"
+        },
+        {
+          "name": "Oyster Box",
+          "price": "$48",
+          "note": "24 to take home"
+        },
+        {
+          "name": "Enamel Plate",
+          "price": "$18",
+          "note": "Shell pattern"
+        }
+      ],
+      "cta": {
+        "headline": "Reserve your table by the water",
+        "sub": "Walk-ins welcome at the bar.",
+        "button": "Book now"
+      },
+      "footer": {
+        "columns": [
+          {
+            "title": "Explore",
+            "links": [
+              "Menu",
+              "Reservations",
+              "Oyster beds",
+              "Private dining"
+            ]
+          },
+          {
+            "title": "Company",
+            "links": [
+              "About",
+              "Careers",
+              "Press",
+              "Contact"
+            ]
+          },
+          {
+            "title": "Resources",
+            "links": [
+              "Journal",
+              "Help center",
+              "Guides",
+              "Community"
+            ]
+          },
+          {
+            "title": "Legal",
+            "links": [
+              "Privacy",
+              "Terms",
+              "Cookies",
+              "Accessibility"
+            ]
+          }
+        ],
+        "legal": "© 2026 Saltmarsh Oyster Bar. All rights reserved."
+      }
+    }
+  },
+  {
+    "slug": "framer",
+    "url": "https://www.framer.com",
+    "group": "rest",
+    "style": "dark, motion-heavy, big type",
+    "brief": {
+      "name": "Aurelia Dance Academy",
+      "pitch": "A contemporary and ballet school for adults and young dancers.",
+      "nav": [
+        "Classes",
+        "Timetable",
+        "Teachers",
+        "Performances",
+        "Join"
+      ],
+      "hero": {
+        "headline": "Move like no one is grading you",
+        "sub": "Ballet, contemporary and jazz for every body and every age, in sprung-floor studios.",
+        "primaryCta": "Book a trial class",
+        "secondaryCta": "See timetable"
+      },
+      "features": [
+        {
+          "title": "Sprung floors",
+          "body": "Kind to joints in every studio."
+        },
+        {
+          "title": "Adult beginners",
+          "body": "Never danced? Perfect."
+        },
+        {
+          "title": "Youth company",
+          "body": "Auditioned training for teens."
+        },
+        {
+          "title": "Live accompanists",
+          "body": "Piano for ballet classes."
+        },
+        {
+          "title": "Showcases",
+          "body": "Perform twice a year on a real stage."
+        },
+        {
+          "title": "Flexible passes",
+          "body": "Mix styles as you like."
+        }
+      ],
+      "stats": [
+        {
+          "value": "5",
+          "label": "studios"
+        },
+        {
+          "value": "70",
+          "label": "classes weekly"
+        },
+        {
+          "value": "1,200",
+          "label": "students"
+        },
+        {
+          "value": "2",
+          "label": "showcases a year"
+        }
+      ],
+      "testimonials": [
+        {
+          "quote": "At 52 I did my first plié.",
+          "name": "Sandra Whyte",
+          "role": "Adult student"
+        },
+        {
+          "quote": "My daughter found her confidence here.",
+          "name": "Ahmed Karim",
+          "role": "Parent"
+        },
+        {
+          "quote": "Teachers push you kindly.",
+          "name": "Yuki Tanaka",
+          "role": "Company dancer"
+        }
+      ],
+      "pricing": [
+        {
+          "name": "Trial",
+          "price": "$15",
+          "blurb": "First class.",
+          "bullets": [
+            "Any style",
+            "Studio tour",
+            "Teacher chat",
+            "Bring a friend"
+          ]
+        },
+        {
+          "name": "Five-Class Pass",
+          "price": "$90",
+          "blurb": "Use within 2 months.",
+          "bullets": [
+            "Any class",
+            "Book online",
+            "Free shoe fitting",
+            "Showcase entry"
+          ]
+        },
+        {
+          "name": "Unlimited",
+          "price": "$140/mo",
+          "blurb": "Dance as much as you like.",
+          "bullets": [
+            "Unlimited classes",
+            "Workshops included",
+            "Studio hire discount",
+            "Priority booking"
+          ]
+        }
+      ],
+      "articles": [
+        {
+          "title": "Ballet for adults: where to start",
+          "excerpt": "Shoes, posture and patience.",
+          "tag": "Beginners"
+        },
+        {
+          "title": "Behind the winter showcase",
+          "excerpt": "Six months of rehearsals.",
+          "tag": "Performances"
+        },
+        {
+          "title": "Stretching that actually helps",
+          "excerpt": "Active vs passive.",
+          "tag": "Wellness"
+        },
+        {
+          "title": "Teacher spotlight: Marco",
+          "excerpt": "From company dancer to coach.",
+          "tag": "Teachers"
+        },
+        {
+          "title": "Pointe readiness",
+          "excerpt": "When young dancers can start.",
+          "tag": "Youth"
+        },
+        {
+          "title": "Choosing dance shoes",
+          "excerpt": "Split sole or full.",
+          "tag": "Gear"
+        }
+      ],
+      "products": [
+        {
+          "name": "Ballet Slippers",
+          "price": "$28",
+          "note": "Canvas split sole"
+        },
+        {
+          "name": "Dance Bag",
+          "price": "$36",
+          "note": "Shoe compartment"
+        },
+        {
+          "name": "Leotard",
+          "price": "$42",
+          "note": "Classic black"
+        },
+        {
+          "name": "Warm-up Shorts",
+          "price": "$30",
+          "note": "Knit"
+        },
+        {
+          "name": "Showcase DVD",
+          "price": "$20",
+          "note": "Winter performance"
+        },
+        {
+          "name": "Gift Pass",
+          "price": "$90",
+          "note": "Five classes"
+        }
+      ],
+      "cta": {
+        "headline": "Your first class is waiting",
+        "sub": "Trial classes daily.",
+        "button": "Book a trial"
+      },
+      "footer": {
+        "columns": [
+          {
+            "title": "Explore",
+            "links": [
+              "Classes",
+              "Timetable",
+              "Teachers",
+              "Performances"
+            ]
+          },
+          {
+            "title": "Company",
+            "links": [
+              "About",
+              "Careers",
+              "Press",
+              "Contact"
+            ]
+          },
+          {
+            "title": "Resources",
+            "links": [
+              "Journal",
+              "Help center",
+              "Guides",
+              "Community"
+            ]
+          },
+          {
+            "title": "Legal",
+            "links": [
+              "Privacy",
+              "Terms",
+              "Cookies",
+              "Accessibility"
+            ]
+          }
+        ],
+        "legal": "© 2026 Aurelia Dance Academy. All rights reserved."
+      }
+    }
+  },
+  {
+    "slug": "allbirds",
+    "url": "https://www.allbirds.com",
+    "group": "rest",
+    "style": "friendly e-commerce, soft colours",
+    "brief": {
+      "name": "Wrenwood Tea Merchants",
+      "pitch": "Single-estate loose-leaf teas sourced directly from small growers.",
+      "nav": [
+        "Teas",
+        "Teaware",
+        "Growers",
+        "Subscriptions",
+        "Brewing guide"
+      ],
+      "hero": {
+        "headline": "Tea, traced to the hillside",
+        "sub": "Loose-leaf greens, oolongs and blacks bought directly from family estates.",
+        "primaryCta": "Shop teas",
+        "secondaryCta": "Find your tea"
+      },
+      "features": [
+        {
+          "title": "Direct trade",
+          "body": "We pay growers above fair-trade prices."
+        },
+        {
+          "title": "Harvest-dated",
+          "body": "Every pouch shows the picking date."
+        },
+        {
+          "title": "Compostable pouches",
+          "body": "Plant-based and resealable."
+        },
+        {
+          "title": "Brewing guides",
+          "body": "Temperature and timing on every label."
+        },
+        {
+          "title": "Sample sets",
+          "body": "Taste before you commit."
+        },
+        {
+          "title": "Tea finder quiz",
+          "body": "Matched to your taste in a minute."
+        }
+      ],
+      "stats": [
+        {
+          "value": "27",
+          "label": "partner estates"
+        },
+        {
+          "value": "9",
+          "label": "countries"
+        },
+        {
+          "value": "64",
+          "label": "teas in range"
+        },
+        {
+          "value": "14 days",
+          "label": "garden to shelf"
+        }
+      ],
+      "testimonials": [
+        {
+          "quote": "Tea finally tastes like it smells.",
+          "name": "Lydia Chen",
+          "role": "Customer"
+        },
+        {
+          "quote": "The oolong sampler converted me.",
+          "name": "Marcus Webb",
+          "role": "Customer"
+        },
+        {
+          "quote": "They visit our farm every year.",
+          "name": "Mr. Prasad",
+          "role": "Grower partner"
+        }
+      ],
+      "pricing": [
+        {
+          "name": "Taster",
+          "price": "$12/mo",
+          "blurb": "Three samples monthly.",
+          "bullets": [
+            "Three 15 g pouches",
+            "Tasting notes",
+            "Brewing card",
+            "Free shipping"
+          ]
+        },
+        {
+          "name": "Tea Lover",
+          "price": "$24/mo",
+          "blurb": "Two full pouches.",
+          "bullets": [
+            "Two 50 g pouches",
+            "Rotating origins",
+            "Member prices",
+            "Free shipping"
+          ]
+        },
+        {
+          "name": "Connoisseur",
+          "price": "$45/mo",
+          "blurb": "Rare and limited lots.",
+          "bullets": [
+            "Three rare teas",
+            "Grower letters",
+            "Early harvest access",
+            "Gift pouch"
+          ]
+        }
+      ],
+      "articles": [
+        {
+          "title": "How to brew green tea without bitterness",
+          "excerpt": "Lower temperature, shorter steep.",
+          "tag": "Brewing"
+        },
+        {
+          "title": "A visit to a Darjeeling estate",
+          "excerpt": "First flush season.",
+          "tag": "Growers"
+        },
+        {
+          "title": "Oolong oxidation explained",
+          "excerpt": "From green to dark.",
+          "tag": "Learn"
+        },
+        {
+          "title": "Cold brew tea",
+          "excerpt": "Overnight, in the fridge.",
+          "tag": "Recipes"
+        },
+        {
+          "title": "What direct trade means to us",
+          "excerpt": "Prices and partnerships.",
+          "tag": "Company"
+        },
+        {
+          "title": "Choosing a teapot",
+          "excerpt": "Clay, glass or iron.",
+          "tag": "Teaware"
+        }
+      ],
+      "products": [
+        {
+          "name": "High Mountain Oolong",
+          "price": "$18",
+          "note": "50 g, Taiwan"
+        },
+        {
+          "name": "First Flush Darjeeling",
+          "price": "$22",
+          "note": "50 g, India"
+        },
+        {
+          "name": "Sencha Asanoka",
+          "price": "$16",
+          "note": "50 g, Japan"
+        },
+        {
+          "name": "Glass Teapot",
+          "price": "$34",
+          "note": "600 ml"
+        },
+        {
+          "name": "Bamboo Scoop",
+          "price": "$6",
+          "note": "Handmade"
+        },
+        {
+          "name": "Sampler Set",
+          "price": "$24",
+          "note": "Eight teas"
+        }
+      ],
+      "cta": {
+        "headline": "Find a tea you will love",
+        "sub": "Take the two-minute quiz.",
+        "button": "Start quiz"
+      },
+      "footer": {
+        "columns": [
+          {
+            "title": "Explore",
+            "links": [
+              "Teas",
+              "Teaware",
+              "Growers",
+              "Subscriptions"
+            ]
+          },
+          {
+            "title": "Company",
+            "links": [
+              "About",
+              "Careers",
+              "Press",
+              "Contact"
+            ]
+          },
+          {
+            "title": "Resources",
+            "links": [
+              "Journal",
+              "Help center",
+              "Guides",
+              "Community"
+            ]
+          },
+          {
+            "title": "Legal",
+            "links": [
+              "Privacy",
+              "Terms",
+              "Cookies",
+              "Accessibility"
+            ]
+          }
+        ],
+        "legal": "© 2026 Wrenwood Tea Merchants. All rights reserved."
+      }
+    }
+  },
+  {
+    "slug": "pentagram",
+    "url": "https://www.pentagram.com",
+    "group": "rest",
+    "style": "stark portfolio, grid, white",
+    "brief": {
+      "name": "Ostrander Architects",
+      "pitch": "A small practice designing low-energy homes and community buildings.",
+      "nav": [
+        "Projects",
+        "Practice",
+        "Approach",
+        "Writing",
+        "Contact"
+      ],
+      "hero": {
+        "headline": "Buildings that use less and give more",
+        "sub": "Passive houses, libraries and schools designed with the people who will use them.",
+        "primaryCta": "View projects",
+        "secondaryCta": "Start a conversation"
+      },
+      "features": [
+        {
+          "title": "Passive house certified",
+          "body": "Homes that need almost no heating."
+        },
+        {
+          "title": "Timber first",
+          "body": "Low-carbon structures wherever possible."
+        },
+        {
+          "title": "Community design",
+          "body": "Workshops with residents from day one."
+        },
+        {
+          "title": "Retrofits",
+          "body": "Bringing old buildings up to modern standards."
+        },
+        {
+          "title": "Planning expertise",
+          "body": "Sensitive sites and conservation areas."
+        },
+        {
+          "title": "Lifecycle thinking",
+          "body": "Designed for repair and adaptation."
+        }
+      ],
+      "stats": [
+        {
+          "value": "85",
+          "label": "completed projects"
+        },
+        {
+          "value": "14",
+          "label": "architects"
+        },
+        {
+          "value": "90%",
+          "label": "less heating demand"
+        },
+        {
+          "value": "7",
+          "label": "design awards"
+        }
+      ],
+      "testimonials": [
+        {
+          "quote": "Our heating bill is lower than our water bill.",
+          "name": "Fiona and Rob",
+          "role": "Homeowners"
+        },
+        {
+          "quote": "They listened to every resident.",
+          "name": "Cllr. Amina Yusuf",
+          "role": "Local council"
+        },
+        {
+          "quote": "A library children actually want to visit.",
+          "name": "Peter Lang",
+          "role": "Head librarian"
+        }
+      ],
+      "pricing": [
+        {
+          "name": "Feasibility",
+          "price": "$3,500",
+          "blurb": "Is your project possible?",
+          "bullets": [
+            "Site visit",
+            "Planning review",
+            "Concept sketches",
+            "Budget estimate"
+          ]
+        },
+        {
+          "name": "Full Service",
+          "price": "% of build",
+          "blurb": "From brief to handover.",
+          "bullets": [
+            "Design and planning",
+            "Technical drawings",
+            "Contractor tender",
+            "Site supervision"
+          ]
+        },
+        {
+          "name": "Retrofit Audit",
+          "price": "$1,800",
+          "blurb": "Existing homes.",
+          "bullets": [
+            "Thermal survey",
+            "Upgrade roadmap",
+            "Cost estimates",
+            "Grant guidance"
+          ]
+        }
+      ],
+      "articles": [
+        {
+          "title": "What makes a house passive",
+          "excerpt": "Airtightness, insulation and sun.",
+          "tag": "Approach"
+        },
+        {
+          "title": "Designing the Riverside Library",
+          "excerpt": "Light, timber and quiet corners.",
+          "tag": "Projects"
+        },
+        {
+          "title": "Why we build in timber",
+          "excerpt": "Carbon numbers compared.",
+          "tag": "Materials"
+        },
+        {
+          "title": "A retrofit that halved bills",
+          "excerpt": "A Victorian terrace transformed.",
+          "tag": "Case study"
+        },
+        {
+          "title": "Working with residents",
+          "excerpt": "Our workshop methods.",
+          "tag": "Process"
+        },
+        {
+          "title": "Planning in conservation areas",
+          "excerpt": "Respect and ambition.",
+          "tag": "Writing"
+        }
+      ],
+      "products": [
+        {
+          "name": "Monograph",
+          "price": "$45",
+          "note": "Ten years of work"
+        },
+        {
+          "name": "Retrofit Guide",
+          "price": "$18",
+          "note": "Printed handbook"
+        },
+        {
+          "name": "Architectural Print",
+          "price": "$60",
+          "note": "A2, Riverside Library"
+        },
+        {
+          "name": "Lecture Ticket",
+          "price": "$12",
+          "note": "Monthly talks"
+        },
+        {
+          "name": "Notebook",
+          "price": "$14",
+          "note": "Grid paper"
+        },
+        {
+          "name": "Model Kit",
+          "price": "$38",
+          "note": "Timber house"
+        }
+      ],
+      "cta": {
+        "headline": "Tell us about your project",
+        "sub": "We reply within three working days.",
+        "button": "Get in touch"
+      },
+      "footer": {
+        "columns": [
+          {
+            "title": "Explore",
+            "links": [
+              "Projects",
+              "Practice",
+              "Approach",
+              "Writing"
+            ]
+          },
+          {
+            "title": "Company",
+            "links": [
+              "About",
+              "Careers",
+              "Press",
+              "Contact"
+            ]
+          },
+          {
+            "title": "Resources",
+            "links": [
+              "Journal",
+              "Help center",
+              "Guides",
+              "Community"
+            ]
+          },
+          {
+            "title": "Legal",
+            "links": [
+              "Privacy",
+              "Terms",
+              "Cookies",
+              "Accessibility"
+            ]
+          }
+        ],
+        "legal": "© 2026 Ostrander Architects. All rights reserved."
+      }
+    }
+  },
+  {
+    "slug": "resend",
+    "url": "https://resend.com",
+    "group": "holdout",
+    "style": "dark, minimal developer",
+    "brief": {
+      "name": "Lanternfold Bookbinding",
+      "pitch": "Restoration and custom binding for family bibles, theses and rare books.",
+      "nav": [
+        "Restoration",
+        "Custom binding",
+        "Theses",
+        "Process",
+        "Quote"
+      ],
+      "hero": {
+        "headline": "Give an old book its second life",
+        "sub": "Repair, rebinding and conservation by trained bookbinders, using archival materials only.",
+        "primaryCta": "Request a quote",
+        "secondaryCta": "See our work"
+      },
+      "features": [
+        {
+          "title": "Archival materials",
+          "body": "Acid-free papers and reversible adhesives."
+        },
+        {
+          "title": "Family bibles",
+          "body": "Spines rebuilt, pages mended, records preserved."
+        },
+        {
+          "title": "Thesis binding",
+          "body": "Hardbound copies in 48 hours."
+        },
+        {
+          "title": "Leather and cloth",
+          "body": "Dozens of colours and gold tooling."
+        },
+        {
+          "title": "Free assessment",
+          "body": "Photos in, honest advice out."
+        },
+        {
+          "title": "Insured courier",
+          "body": "Your book is tracked both ways."
+        }
+      ],
+      "stats": [
+        {
+          "value": "30 yr",
+          "label": "of bookbinding"
+        },
+        {
+          "value": "8,000",
+          "label": "books restored"
+        },
+        {
+          "value": "48 h",
+          "label": "thesis turnaround"
+        },
+        {
+          "value": "3",
+          "label": "conservators"
+        }
+      ],
+      "testimonials": [
+        {
+          "quote": "My grandmother's bible looks loved again.",
+          "name": "Ruth Adeyemi",
+          "role": "Customer"
+        },
+        {
+          "quote": "Thesis copies were perfect and early.",
+          "name": "Dr. Sean Byrne",
+          "role": "Graduate"
+        },
+        {
+          "quote": "Careful, transparent conservation work.",
+          "name": "Helen Shaw",
+          "role": "Archivist"
+        }
+      ],
+      "pricing": [
+        {
+          "name": "Thesis",
+          "price": "$45/copy",
+          "blurb": "Hardbound academic work.",
+          "bullets": [
+            "Cloth cover",
+            "Gold spine lettering",
+            "48-hour service",
+            "Bulk discounts"
+          ]
+        },
+        {
+          "name": "Restoration",
+          "price": "from $180",
+          "blurb": "Repair and rebind.",
+          "bullets": [
+            "Free assessment",
+            "Spine and cover repair",
+            "Page mending",
+            "Protective box option"
+          ]
+        },
+        {
+          "name": "Conservation",
+          "price": "Custom",
+          "blurb": "Rare and valuable books.",
+          "bullets": [
+            "Condition report",
+            "Archival treatment",
+            "Custom clamshell",
+            "Insurance valuation"
+          ]
+        }
+      ],
+      "articles": [
+        {
+          "title": "How to store old books",
+          "excerpt": "Light, heat and humidity.",
+          "tag": "Care"
+        },
+        {
+          "title": "Rebinding a 200-year-old bible",
+          "excerpt": "Step by step.",
+          "tag": "Process"
+        },
+        {
+          "title": "Leather vs bookcloth",
+          "excerpt": "Durability and cost.",
+          "tag": "Materials"
+        },
+        {
+          "title": "Gold tooling by hand",
+          "excerpt": "An old craft, still alive.",
+          "tag": "Craft"
+        },
+        {
+          "title": "When not to repair a book",
+          "excerpt": "Sometimes less is more.",
+          "tag": "Conservation"
+        },
+        {
+          "title": "Thesis deadline tips",
+          "excerpt": "Formatting for binding.",
+          "tag": "Guides"
+        }
+      ],
+      "products": [
+        {
+          "name": "Book Care Kit",
+          "price": "$28",
+          "note": "Brushes and cloths"
+        },
+        {
+          "name": "Archival Box",
+          "price": "$35",
+          "note": "Custom-sized"
+        },
+        {
+          "name": "Bone Folder",
+          "price": "$12",
+          "note": "Handmade"
+        },
+        {
+          "name": "Leather Journal",
+          "price": "$48",
+          "note": "Hand-bound"
+        },
+        {
+          "name": "Bookbinding Workshop",
+          "price": "$95",
+          "note": "One day"
+        },
+        {
+          "name": "Gift Voucher",
+          "price": "$50",
+          "note": "Any service"
+        }
+      ],
+      "cta": {
+        "headline": "Send us photos of your book",
+        "sub": "Free assessment within two days.",
+        "button": "Request a quote"
+      },
+      "footer": {
+        "columns": [
+          {
+            "title": "Explore",
+            "links": [
+              "Restoration",
+              "Custom binding",
+              "Theses",
+              "Process"
+            ]
+          },
+          {
+            "title": "Company",
+            "links": [
+              "About",
+              "Careers",
+              "Press",
+              "Contact"
+            ]
+          },
+          {
+            "title": "Resources",
+            "links": [
+              "Journal",
+              "Help center",
+              "Guides",
+              "Community"
+            ]
+          },
+          {
+            "title": "Legal",
+            "links": [
+              "Privacy",
+              "Terms",
+              "Cookies",
+              "Accessibility"
+            ]
+          }
+        ],
+        "legal": "© 2026 Lanternfold Bookbinding. All rights reserved."
+      }
+    }
+  },
+  {
+    "slug": "webflow",
+    "url": "https://webflow.com",
+    "group": "holdout",
+    "style": "dark/blue, polished SaaS",
+    "brief": {
+      "name": "Coppervale Hearing",
+      "pitch": "Independent audiologists offering hearing tests, aids and tinnitus care.",
+      "nav": [
+        "Hearing tests",
+        "Hearing aids",
+        "Tinnitus",
+        "Clinics",
+        "Book"
+      ],
+      "hero": {
+        "headline": "Hear the conversation again",
+        "sub": "Thorough hearing tests and independent advice on every major hearing aid brand.",
+        "primaryCta": "Book a hearing test",
+        "secondaryCta": "Take the online check"
+      },
+      "features": [
+        {
+          "title": "Independent advice",
+          "body": "We are not tied to any manufacturer."
+        },
+        {
+          "title": "Hour-long tests",
+          "body": "Proper time with a qualified audiologist."
+        },
+        {
+          "title": "Free aftercare",
+          "body": "Adjustments for the life of your aids."
+        },
+        {
+          "title": "Tinnitus clinic",
+          "body": "Sound therapy and coping strategies."
+        },
+        {
+          "title": "Earwax removal",
+          "body": "Gentle microsuction."
+        },
+        {
+          "title": "Home visits",
+          "body": "For those who cannot travel."
+        }
+      ],
+      "stats": [
+        {
+          "value": "16",
+          "label": "clinics"
+        },
+        {
+          "value": "45k",
+          "label": "tests completed"
+        },
+        {
+          "value": "60 min",
+          "label": "appointments"
+        },
+        {
+          "value": "4.9",
+          "label": "patient rating"
+        }
+      ],
+      "testimonials": [
+        {
+          "quote": "I can follow dinner conversations again.",
+          "name": "George Patel",
+          "role": "Patient"
+        },
+        {
+          "quote": "No pressure to buy, just advice.",
+          "name": "Brenda Collins",
+          "role": "Patient"
+        },
+        {
+          "quote": "The tinnitus clinic changed my sleep.",
+          "name": "Ali Rahman",
+          "role": "Patient"
+        }
+      ],
+      "pricing": [
+        {
+          "name": "Hearing Test",
+          "price": "Free",
+          "blurb": "Full assessment.",
+          "bullets": [
+            "60-minute test",
+            "Results explained",
+            "Written report",
+            "No obligation"
+          ]
+        },
+        {
+          "name": "Essential Aids",
+          "price": "$1,495",
+          "blurb": "Discreet everyday aids.",
+          "bullets": [
+            "Pair of aids",
+            "Fitting and tuning",
+            "Three years aftercare",
+            "Battery supply"
+          ]
+        },
+        {
+          "name": "Premium Aids",
+          "price": "$3,295",
+          "blurb": "Rechargeable and smart.",
+          "bullets": [
+            "Rechargeable pair",
+            "Phone streaming",
+            "Five years aftercare",
+            "Loss and damage cover"
+          ]
+        }
+      ],
+      "articles": [
+        {
+          "title": "Signs you might need a hearing test",
+          "excerpt": "Turning the TV up is one.",
+          "tag": "Hearing health"
+        },
+        {
+          "title": "Rechargeable hearing aids explained",
+          "excerpt": "Battery life and charging.",
+          "tag": "Technology"
+        },
+        {
+          "title": "Living with tinnitus",
+          "excerpt": "Practical strategies.",
+          "tag": "Tinnitus"
+        },
+        {
+          "title": "Protecting your hearing at concerts",
+          "excerpt": "Earplugs that keep the music.",
+          "tag": "Prevention"
+        },
+        {
+          "title": "Microsuction vs syringing",
+          "excerpt": "Why we use suction.",
+          "tag": "Treatments"
+        },
+        {
+          "title": "Talking to a parent about hearing loss",
+          "excerpt": "A gentle approach.",
+          "tag": "Family"
+        }
+      ],
+      "products": [
+        {
+          "name": "Musician Earplugs",
+          "price": "$165",
+          "note": "Custom-moulded"
+        },
+        {
+          "name": "Hearing Aid Dryer",
+          "price": "$45",
+          "note": "UV cleaning"
+        },
+        {
+          "name": "Batteries Pack",
+          "price": "$12",
+          "note": "60 cells"
+        },
+        {
+          "name": "TV Streamer",
+          "price": "$220",
+          "note": "Direct to aids"
+        },
+        {
+          "name": "Swim Plugs",
+          "price": "$85",
+          "note": "Custom fit"
+        },
+        {
+          "name": "Cleaning Kit",
+          "price": "$18",
+          "note": "Brushes and wipes"
+        }
+      ],
+      "cta": {
+        "headline": "Book a free hearing test",
+        "sub": "Appointments this week at every clinic.",
+        "button": "Book now"
+      },
+      "footer": {
+        "columns": [
+          {
+            "title": "Explore",
+            "links": [
+              "Hearing tests",
+              "Hearing aids",
+              "Tinnitus",
+              "Clinics"
+            ]
+          },
+          {
+            "title": "Company",
+            "links": [
+              "About",
+              "Careers",
+              "Press",
+              "Contact"
+            ]
+          },
+          {
+            "title": "Resources",
+            "links": [
+              "Journal",
+              "Help center",
+              "Guides",
+              "Community"
+            ]
+          },
+          {
+            "title": "Legal",
+            "links": [
+              "Privacy",
+              "Terms",
+              "Cookies",
+              "Accessibility"
+            ]
+          }
+        ],
+        "legal": "© 2026 Coppervale Hearing. All rights reserved."
+      }
+    }
+  },
+  {
+    "slug": "medium",
+    "url": "https://medium.com",
+    "group": "holdout",
+    "style": "minimal editorial, serif",
+    "brief": {
+      "name": "Driftwood Sailing School",
+      "pitch": "Coastal sailing courses and skippered trips for beginners to yachtmasters.",
+      "nav": [
+        "Courses",
+        "Trips",
+        "Fleet",
+        "Instructors",
+        "Book"
+      ],
+      "hero": {
+        "headline": "Learn to read the wind",
+        "sub": "Weekend dinghy courses, liveaboard yacht training and skippered island trips.",
+        "primaryCta": "Book a course",
+        "secondaryCta": "Explore trips"
+      },
+      "features": [
+        {
+          "title": "Certified instructors",
+          "body": "Patient, experienced and accredited."
+        },
+        {
+          "title": "Modern fleet",
+          "body": "Dinghies and 36-foot yachts."
+        },
+        {
+          "title": "Liveaboard weekends",
+          "body": "Learn, cook and sleep aboard."
+        },
+        {
+          "title": "Small crews",
+          "body": "Four students per instructor at most."
+        },
+        {
+          "title": "All kit provided",
+          "body": "Lifejackets, waterproofs and boots."
+        },
+        {
+          "title": "Island trips",
+          "body": "Skippered voyages for all levels."
+        }
+      ],
+      "stats": [
+        {
+          "value": "22",
+          "label": "boats"
+        },
+        {
+          "value": "3,500",
+          "label": "sailors trained"
+        },
+        {
+          "value": "4",
+          "label": "max per instructor"
+        },
+        {
+          "value": "18",
+          "label": "years afloat"
+        }
+      ],
+      "testimonials": [
+        {
+          "quote": "I went from nervous to tacking in a weekend.",
+          "name": "Charlotte Wu",
+          "role": "Beginner"
+        },
+        {
+          "quote": "The liveaboard week was unforgettable.",
+          "name": "Ivan Petrov",
+          "role": "Student"
+        },
+        {
+          "quote": "Instructors explain things clearly.",
+          "name": "Noor Hamdan",
+          "role": "Day skipper graduate"
+        }
+      ],
+      "pricing": [
+        {
+          "name": "Taster Day",
+          "price": "$120",
+          "blurb": "One day on the water.",
+          "bullets": [
+            "Dinghy sailing",
+            "All kit included",
+            "Lunch on shore",
+            "Certificate"
+          ]
+        },
+        {
+          "name": "Competent Crew",
+          "price": "$590",
+          "blurb": "Five days aboard.",
+          "bullets": [
+            "Liveaboard yacht",
+            "Meals included",
+            "Night sailing",
+            "Recognised certificate"
+          ]
+        },
+        {
+          "name": "Day Skipper",
+          "price": "$790",
+          "blurb": "Lead your own crew.",
+          "bullets": [
+            "Navigation theory",
+            "Five days practical",
+            "Passage planning",
+            "Skipper certificate"
+          ]
+        }
+      ],
+      "articles": [
+        {
+          "title": "Your first time on a sailboat",
+          "excerpt": "What to expect and wear.",
+          "tag": "Beginners"
+        },
+        {
+          "title": "Reading weather forecasts",
+          "excerpt": "Wind, swell and tide.",
+          "tag": "Seamanship"
+        },
+        {
+          "title": "Knots every sailor should know",
+          "excerpt": "Six knots, step by step.",
+          "tag": "Skills"
+        },
+        {
+          "title": "A week around the islands",
+          "excerpt": "Log from our summer trip.",
+          "tag": "Trips"
+        },
+        {
+          "title": "Choosing sailing gloves",
+          "excerpt": "Grip and comfort.",
+          "tag": "Gear"
+        },
+        {
+          "title": "Night sailing basics",
+          "excerpt": "Lights, watches and stars.",
+          "tag": "Seamanship"
+        }
+      ],
+      "products": [
+        {
+          "name": "Sailing Gloves",
+          "price": "$32",
+          "note": "Half-finger"
+        },
+        {
+          "name": "Waterproof Jacket",
+          "price": "$180",
+          "note": "Coastal grade"
+        },
+        {
+          "name": "Knot Practice Kit",
+          "price": "$15",
+          "note": "Ropes and cards"
+        },
+        {
+          "name": "Tide Tables",
+          "price": "$10",
+          "note": "This year's edition"
+        },
+        {
+          "name": "Dry Bag",
+          "price": "$25",
+          "note": "20 litres"
+        },
+        {
+          "name": "Gift Voucher",
+          "price": "$120",
+          "note": "Taster day"
+        }
+      ],
+      "cta": {
+        "headline": "Get out on the water",
+        "sub": "Courses run from April to October.",
+        "button": "Book your place"
+      },
+      "footer": {
+        "columns": [
+          {
+            "title": "Explore",
+            "links": [
+              "Courses",
+              "Trips",
+              "Fleet",
+              "Instructors"
+            ]
+          },
+          {
+            "title": "Company",
+            "links": [
+              "About",
+              "Careers",
+              "Press",
+              "Contact"
+            ]
+          },
+          {
+            "title": "Resources",
+            "links": [
+              "Journal",
+              "Help center",
+              "Guides",
+              "Community"
+            ]
+          },
+          {
+            "title": "Legal",
+            "links": [
+              "Privacy",
+              "Terms",
+              "Cookies",
+              "Accessibility"
+            ]
+          }
+        ],
+        "legal": "© 2026 Driftwood Sailing School. All rights reserved."
+      }
+    }
+  }
+]

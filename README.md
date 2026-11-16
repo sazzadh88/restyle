@@ -116,6 +116,61 @@ The skill does not invent people, quotes or awards. Where a section of the refer
 content, it writes neutral copy or leaves a marked placeholder and lists it in the final report. A
 brand colour replaces the reference's accent only if you ask (colour fidelity drops when you do).
 
+### Prompt template
+Copy this, fill in the blanks and paste it into a Claude Code session. Lines marked optional can be
+deleted. The minimum is the reference URL, business name, what you do, services and contact details.
+
+```text
+Use the restyle skill to build a website for my business in the style of this reference site.
+
+Reference site: https://________
+
+BUSINESS
+- Business name: ________
+- What we do (1–2 lines): ________
+- Who our customers are: ________
+- Tagline / main headline: ________
+- Tone (e.g. friendly, formal, premium): ________
+
+PAGES
+- Pages to build: Home, About, Services, Contact
+  (delete the ones you do not need; Home alone is fastest)
+
+SERVICES OR PRODUCTS
+1. Name: ________ | Description: ________ | Price (optional): ________
+2. Name: ________ | Description: ________ | Price (optional): ________
+3. Name: ________ | Description: ________ | Price (optional): ________
+
+ABOUT
+- About us (3–5 lines): ________
+- Year started / team size / location (optional): ________
+
+PROOF (optional; leave blank if you have none, do not make any up)
+- Testimonials (quote + name): ________
+- Numbers we can stand behind (clients, projects, years): ________
+
+CONTACT
+- Email: ________
+- Phone: ________
+- Address: ________
+- Social links: ________
+- Main button text and where it goes (e.g. "Get a quote" -> contact page): ________
+
+ASSETS (optional)
+- Logo file path: ________
+- Photo folder path: ________
+- Brand colour: ________ (leave blank to keep the reference site's colours)
+
+RULES
+- Keep the reference's layout, colours, typography and motion, but use only my content above.
+- Do not copy the reference's logo, name, text, images or fonts.
+- Where I left something blank, use a clearly marked placeholder and list it in the final report.
+- Output folder: ./________-site
+```
+
+Each extra page adds time; the home page alone takes roughly 25–90 minutes. A brand colour replaces
+the reference's accent, so the result looks less like the reference.
+
 ## How it works
 1. **Capture the reference.** A headless Chrome loads the page at 1440, 768 and 390 px and measures
    bands, colours, type, spacing, components, hover states and load and scroll motion, with

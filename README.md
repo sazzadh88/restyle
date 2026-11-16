@@ -243,7 +243,7 @@ code or the spec, and follows `harness/judge-prompt.md`. The pass mark is 8.5.
 - 20 tuning sites: all 20 pass, average 8.87.
 - 3 holdout sites, never used for tuning: medium 9.43, webflow 8.78, resend 8.71 (average 8.97).
 
-Final scores of the tuning sites (`runs/r9/CHANGES.md`):
+Final scores of the tuning sites:
 
 | site | score |
 |---|---|
@@ -268,7 +268,6 @@ Final scores of the tuning sites (`runs/r9/CHANGES.md`):
 | raycast | 8.63 |
 | apple | 8.60 |
 
-Holdout per-area scores are in `runs/holdout/REPORT.md`.
 
 Caveats:
 - Each score rests on one judge pass, so sites within about 0.1 of the mark (apple 8.60, raycast
@@ -280,9 +279,7 @@ Caveats:
   Google Fonts plus, in two builds, a pinned script CDN.
 
 ## Test rig
-The repository ships the round reports (`runs/<round>/REPORT.md`, `CHANGES.md`), not the builds or
-captures behind them; everything else under `runs/` is git-ignored and is created when you run the
-rig.
+Everything under `runs/` is git-ignored; the folder is created when you run the rig.
 
 Install at the root:
 
@@ -340,7 +337,6 @@ skill/restyle/        the skill: copy this folder to install it
   scripts/            capture, compare, sheet, inspect, type-scale, serve (+ lib/)
 harness/              test rig: sites.json, pipeline, score, report, judge prompt, check-*.mjs, fixtures/
 docs/                 SPEC.md (design and scoring), USAGE.md (short user guide)
-runs/                 round reports (builds and captures are not committed)
 filemap.md            one line per file
 ```
 

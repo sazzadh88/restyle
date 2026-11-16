@@ -5,9 +5,8 @@ One entry per directory and per significant file: what lives there and when to t
 ## Top level
 
 - `README.md`: what the skill is, install, quick start, how it works, scripts, results, test rig, layout
-- `runs/<round>/<slug>/`: per-site test output (git-ignored except REPORT.md, CHANGES.md)
+- `runs/<round>/<slug>/`: per-site test output (git-ignored)
 - `package.json`: ESM, deps (playwright-core, pngjs, pixelmatch, culori), npm scripts
-- `runs/.gitkeep`: keeps runs/ in git (whitelisted in .gitignore)
 
 ## Docs
 

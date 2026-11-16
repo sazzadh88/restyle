@@ -66,8 +66,8 @@ node ~/.claude/skills/restyle/scripts/serve.mjs ./<business-slug>-site
 Scored out of 10 as half measurement (layout, colour, type, motion, responsive compared from
 captures) and half a blind side-by-side judge. Pass mark 8.5.
 
-- 20 tuning sites: all 20 pass, average 8.87 (final table in `runs/r9/CHANGES.md`).
-- 3 holdout sites never used for tuning: 9.43, 8.78, 8.71 (see `runs/holdout/REPORT.md`).
+- 20 tuning sites: all 20 pass, average 8.87.
+- 3 holdout sites never used for tuning: 9.43, 8.78, 8.71.
 
 Each score rests on one judge pass, so sites within about 0.1 of the mark (apple 8.60, raycast 8.63, framer 8.65) could fall either side on a re-judge. All 23 final builds were scanned for the reference brand name and for external hosts: none carries the name, and they load only Google Fonts plus, in two builds, a pinned script CDN.
 
